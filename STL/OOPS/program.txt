@@ -1,0 +1,13 @@
+1. Write a program to compute the area of a triangle and circle by overloading the `area()` function.
+2. Define a class to represent a bank account. Include the following members:
+    - Data members: Name of depositor, Account number, Type of account, Balance amount in the account
+    - Member functions: To assign initial values, To deposit an amount, To withdraw an amount after checking the balance, To display name & balance
+    Write a main program to test the program using class and object.
+3. Create two classes DM and DB which store values of distances. DM stores distances in meters and centimeters, and DB stores distances in feet and inches. Write a program that can read values for the class objects and add one object of DM with another object of DB. Use a friend function to carry out the addition operation.
+4. Create a class MAT of size m * n. Define all possible matrix operations for MAT type objects.
+5. Create Stud class to display student information using constructor and destructor. (Default constructor, Multiple constructors, Copy constructor, Overloaded constructor)
+6. Consider the class network of the given figure. The class master derives information from both account and admin classes, which in turn derive information from the class person. Define all the four classes and write a program to create, update, and display the information contained in master objects.
+7. A bookshop sells both books and video tapes. Create a class media that stores the title and price of the publication. Create two derived classes, one for storing the number of pages in the book and another for storing the playing time of the tape. A function `display()` must be defined in all classes to display class contents. Write a program using polymorphism and virtual function.
+8. Write a program to show the use of the `this` pointer, `new`, and `delete`.
+9. Write a function template for finding the minimum value contained in an array.
+10. Write a program containing a possible exception. Use a try block to throw it and catch block to handle it properly.
