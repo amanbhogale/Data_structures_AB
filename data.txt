@@ -1,0 +1,33 @@
+Perfect! Here's meaningful and interconnected data (20 entries per table) in comma-delimited format, directly pasted below for each table.
+
+
+--
+
+📁 1. student_dim.csv
+
+stud_id,stude_f_name,stud_m_name,student_l_name,stud_rollno,stud_street,stud_city,stud_country,student_zip,student_phone,stud_email,created_date,end_date,college_code,department_id,course_code
+101,Student101,G,Last101,2023101,833 Street Ln,Seattle,USA,64987,5554698379,student101.last101559@example.com,2023-08-27 00:00:00,2027-08-26,503,203,403
+102,Student102,Y,Last102,2023102,239 Street Ln,Chicago,USA,43880,5553395396,student102.last102633@example.com,2022-05-20 00:00:00,2026-05-19,504,204,404
+103,Student103,N,Last103,2023103,213 Street Ln,New York,USA,14877,5555441113,student103.last103379@example.com,2022-12-21 00:00:00,2026-12-20,501,201,401
+104,Student104,L,Last104,2023104,346 Street Ln,Boston,USA,89659,5551377632,student104.last104727@example.com,2023-02-17 00:00:00,2027-02-16,502,202,402
+105,Student105,Z,Last105,2023105,980 Street Ln,Austin,USA,25610,5553005219,student105.last105743@example.com,2022-03-15 00:00:00,2026-03-14,505,205,405
+106,Student106,A,Last106,2023106,822 Street Ln,New York,USA,55182,5556809372,student106.last106899@example.com,2022-09-02 00:00:00,2026-09-01,501,201,401
+107,Student107,Q,Last107,2023107,584 Street Ln,Seattle,USA,26574,5555123496,student107.last107931@example.com,2022-01-21 00:00:00,2026-01-20,503,203,403
+108,Student108,W,Last108,2023108,218 Street Ln,Austin,USA,13647,5559852013,student108.last108567@example.com,2023-06-30 00:00:00,2027-06-29,504,204,404
+109,Student109,E,Last109,2023109,744 Street Ln,Boston,USA,78251,5558724736,student109.last109179@example.com,2023-03-10 00:00:00,2027-03-09,502,202,402
+110,Student110,R,Last110,2023110,199 Street Ln,Chicago,USA,47911,5556985059,student110.last110683@example.com,2022-07-01 00:00:00,2026-06-30,503,203,403
+111,Student111,S,Last111,2023111,928 Street Ln,Seattle,USA,34422,5552382779,student111.last111331@example.com,2022-11-25 00:00:00,2026-11-24,503,203,403
+112,Student112,T,Last112,2023112,471 Street Ln,Austin,USA,11294,5556183571,student112.last112112@example.com,2022-04-03 00:00:00,2026-04-02,504,204,404
+113,Student113,U,Last113,2023113,125 Street Ln,New York,USA,28351,5551976021,student113.last113951@example.com,2022-06-15 00:00:00,2026-06-14,501,201,401
+114,Student114,I,Last114,2023114,629 Street Ln,Boston,USA,44238,5559681396,student114.last114944@example.com,2023-01-10 00:00:00,2027-01-09,502,202,402
+115,Student115,O,Last115,2023115,358 Street Ln,Austin,USA,99402,5551069731,student115.last115160@example.com,2022-10-01 00:00:00,2026-09-30,504,204,404
+116,Student116,P,Last116,2023116,763 Street Ln,Chicago,USA,71970,5555468410,student116.last116703@example.com,2022-08-18 00:00:00,2026-08-17,503,203,403
+117,Student117,D,Last117,2023117,548 Street Ln,Seattle,USA,87964,5559378403,student117.last117245@example.com,2022-02-11 00:00:00,2026-02-10,503,203,403
+118,Student118,F,Last118,2023118,373 Street Ln,New York,USA,40689,5557736225,student118.last118698@example.com,2022-05-05 00:00:00,2026-05-04,501,201,401
+119,Student119,H,Last119,2023119,645 Street Ln,Boston,USA,62100,5552296902,student119.last119117@example.com,2023-04-20 00:00:00,2027-04-19,502,202,402
+120,Student120,J,Last120,2023120,410 Street Ln,Seattle,USA,50987,5554279742,student120.last120255@example.com,2022-03-29 00:00:00,2026-03-28,503,203,403
+
+
+---
+
+
