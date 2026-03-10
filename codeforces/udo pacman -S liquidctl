@@ -1,0 +1,1370 @@
+Nov 18 22:06:47 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 18 22:06:47 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                              [0;1;39mCoolerControlD:     3.0.2[0m
+                                              [0;1;39mName:               Arch Linux[0m
+                                              [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                              [0;1;39mHost:               zombie[0m
+                                              [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                              [0;1;39mArch:               x86_64[0m
+                                              [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                              [0;1;39mBoard Name:         G512LI[0m
+                                              [0;1;39mBoard Version:      1.0[0m
+                                              [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                              [0;1;39mBIOS Version:       5.17[0m
+                                              [0;1;39mXDG Desktops:       Hyprland[0m
+                                              [0;1;39mXDG Session Types:  wayland, unspecified[0m
+Nov 18 22:06:47 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mconfig directory doesn't exist. Attempting to create it: /etc/coolercontrol[0m
+Nov 18 22:06:47 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mConfig file not found. Creating a new Config file.[0m
+Nov 18 22:06:47 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mWriting new configuration file[0m
+Nov 18 22:06:47 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 18 22:06:49 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 18 22:06:49 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 18 22:06:49 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 18 22:06:49 zombie coolercontrold[12096]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 18 22:06:49 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 18 22:06:49 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"locations":["00000000:01:00.0"],"driver name":["nvml:13.580.105.08"],"driver version":["580.105.08"]}}[0m
+Nov 18 22:06:49 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 18 22:06:49 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"driver name":[""],"locations":["/sys/class/hwmon/hwmon8","/sys/devices/platform/coretemp.0","platform:coretemp"],"driver version":["6.17.8-arch1-1"]}}[0m
+Nov 18 22:06:49 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 18 22:06:49 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"nvme":{"driver version":["6.17.8-arch1-1"],"driver name":[""],"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"]},"pch_cometlake":{"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"iwlwifi_1":{"locations":["/sys/class/hwmon/hwmon7","/sys/devices/virtual/thermal/thermal_zone5"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"acpitz":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"]},"asus":{"driver version":["6.17.8-arch1-1"],"driver name":["asus-nb-wmi"],"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"]}}[0m
+Nov 18 22:06:49 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 18 22:06:49 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mWriting a new Modes configuration file[0m
+Nov 18 22:06:49 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 18 22:06:49 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mWriting a new Alerts configuration file[0m
+Nov 18 22:06:49 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 18 22:06:49 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 18 22:06:49 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 18 22:07:03 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mUI Config file not found - likely first run. Using empty UI Config file.[0m
+Nov 18 22:09:59 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 18 22:10:09 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 18 22:10:09 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 18 22:10:11 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 18 22:10:11 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 18 22:11:15 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 18 22:11:21 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 18 22:11:21 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 18 22:11:23 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 18 22:11:23 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 18 22:11:47 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 18 22:12:03 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 18 22:12:03 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 18 22:12:05 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 18 22:12:05 zombie coolercontrold[12096]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+[0;1;39m-- Boot 7c33d7f578154159a8ac8601bd7aacb9 --[0m
+Nov 18 22:22:10 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 18 22:22:10 zombie coolercontrold[592]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                            [0;1;39mCoolerControlD:     3.0.2[0m
+                                            [0;1;39mName:               Arch Linux[0m
+                                            [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                            [0;1;39mHost:               zombie[0m
+                                            [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                            [0;1;39mArch:               x86_64[0m
+                                            [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                            [0;1;39mBoard Name:         G512LI[0m
+                                            [0;1;39mBoard Version:      1.0[0m
+                                            [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                            [0;1;39mBIOS Version:       5.17[0m
+Nov 18 22:22:10 zombie coolercontrold[592]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 18 22:22:12 zombie coolercontrold[592]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 18 22:22:13 zombie coolercontrold[592]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 18 22:22:13 zombie coolercontrold[592]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 18 22:22:13 zombie coolercontrold[592]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 18 22:22:13 zombie coolercontrold[592]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 18 22:22:13 zombie coolercontrold[592]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"driver version":["580.105.08"],"locations":["00000000:01:00.0"],"driver name":["nvml:13.580.105.08"]}}[0m
+Nov 18 22:22:13 zombie coolercontrold[592]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 18 22:22:13 zombie coolercontrold[592]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon8","/sys/devices/platform/coretemp.0","platform:coretemp"],"driver name":[""]}}[0m
+Nov 18 22:22:13 zombie coolercontrold[592]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 18 22:22:13 zombie coolercontrold[592]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"pch_cometlake":{"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"],"driver version":["6.17.8-arch1-1"],"driver name":[""]},"asus":{"driver version":["6.17.8-arch1-1"],"driver name":["asus-nb-wmi"],"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"]},"nvme":{"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"acpitz":{"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"iwlwifi_1":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon7","/sys/devices/virtual/thermal/thermal_zone5"]}}[0m
+Nov 18 22:22:13 zombie coolercontrold[592]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 18 22:22:13 zombie coolercontrold[592]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 18 22:22:13 zombie coolercontrold[592]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 18 22:22:13 zombie coolercontrold[592]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 18 22:22:13 zombie coolercontrold[592]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 18 22:32:17 zombie systemd[1]: Stopping CoolerControl Daemon...
+Nov 18 22:32:18 zombie coolercontrold[592]: [0;1;39m[0;1;31m[0;1;39mMain process shutting down[0m
+Nov 18 22:32:18 zombie coolercontrold[592]: [0;1;39m[0;1;31m[0;1;39mCPU Repository shutdown[0m
+Nov 18 22:32:18 zombie coolercontrold[592]: [0;1;39m[0;1;31m[0;1;39mGPU Repository shutdown[0m
+Nov 18 22:32:18 zombie coolercontrold[592]: [0;1;39m[0;1;31m[0;1;39mHWMON Repository shutdown[0m
+Nov 18 22:32:18 zombie coolercontrold[592]: [0;1;39m[0;1;31m[0;1;39mCUSTOM_SENSORS Repository shutdown[0m
+Nov 18 22:32:18 zombie coolercontrold[592]: [0;1;39m[0;1;31m[0;1;39mShutdown Complete[0m
+Nov 18 22:32:18 zombie systemd[1]: coolercontrold.service: Deactivated successfully.
+Nov 18 22:32:18 zombie systemd[1]: Stopped CoolerControl Daemon.
+Nov 18 22:32:18 zombie systemd[1]: coolercontrold.service: Consumed 14.100s CPU time, 112.1M memory peak, 33.9M memory swap peak.
+Nov 18 22:32:18 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 18 22:32:18 zombie coolercontrold[20444]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                              [0;1;39mCoolerControlD:     3.0.2[0m
+                                              [0;1;39mName:               Arch Linux[0m
+                                              [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                              [0;1;39mHost:               zombie[0m
+                                              [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                              [0;1;39mArch:               x86_64[0m
+                                              [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                              [0;1;39mBoard Name:         G512LI[0m
+                                              [0;1;39mBoard Version:      1.0[0m
+                                              [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                              [0;1;39mBIOS Version:       5.17[0m
+                                              [0;1;39mXDG Desktops:       Hyprland[0m
+                                              [0;1;39mXDG Session Types:  wayland, unspecified[0m
+Nov 18 22:32:18 zombie coolercontrold[20444]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 18 22:32:20 zombie coolercontrold[20444]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 18 22:32:20 zombie coolercontrold[20444]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 18 22:32:20 zombie coolercontrold[20444]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 18 22:32:20 zombie coolercontrold[20444]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 18 22:32:20 zombie coolercontrold[20444]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 18 22:32:20 zombie coolercontrold[20444]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"driver version":["580.105.08"],"locations":["00000000:01:00.0"],"driver name":["nvml:13.580.105.08"]}}[0m
+Nov 18 22:32:20 zombie coolercontrold[20444]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 18 22:32:20 zombie coolercontrold[20444]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"driver version":["6.17.8-arch1-1"],"driver name":[""],"locations":["/sys/class/hwmon/hwmon8","/sys/devices/platform/coretemp.0","platform:coretemp"]}}[0m
+Nov 18 22:32:20 zombie coolercontrold[20444]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 18 22:32:20 zombie coolercontrold[20444]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"pch_cometlake":{"driver version":["6.17.8-arch1-1"],"driver name":[""],"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"]},"nvme":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"],"driver name":[""]},"asus":{"driver name":["asus-nb-wmi"],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"]},"iwlwifi_1":{"locations":["/sys/class/hwmon/hwmon7","/sys/devices/virtual/thermal/thermal_zone5"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"acpitz":{"driver version":["6.17.8-arch1-1"],"driver name":[""],"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"]}}[0m
+Nov 18 22:32:20 zombie coolercontrold[20444]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 18 22:32:20 zombie coolercontrold[20444]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 18 22:32:20 zombie coolercontrold[20444]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 18 22:32:20 zombie coolercontrold[20444]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 18 22:32:20 zombie coolercontrold[20444]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 18 22:33:02 zombie coolercontrold[20444]: [0;1;39m[0;1;31m[0;1;39mMain process shutting down[0m
+Nov 18 22:33:02 zombie coolercontrold[20444]: [0;1;39m[0;1;31m[0;1;39mCPU Repository shutdown[0m
+Nov 18 22:33:02 zombie coolercontrold[20444]: [0;1;39m[0;1;31m[0;1;39mGPU Repository shutdown[0m
+Nov 18 22:33:02 zombie coolercontrold[20444]: [0;1;39m[0;1;31m[0;1;39mHWMON Repository shutdown[0m
+Nov 18 22:33:02 zombie coolercontrold[20444]: [0;1;39m[0;1;31m[0;1;39mCUSTOM_SENSORS Repository shutdown[0m
+Nov 18 22:33:02 zombie coolercontrold[20444]: [0;1;39m[0;1;31m[0;1;39mShutdown Complete[0m
+Nov 18 22:33:02 zombie systemd[1]: coolercontrold.service: Deactivated successfully.
+Nov 18 22:33:02 zombie systemd[1]: coolercontrold.service: Consumed 1.340s CPU time, 69.3M memory peak.
+Nov 18 22:33:03 zombie systemd[1]: coolercontrold.service: Scheduled restart job, restart counter is at 1.
+Nov 18 22:33:03 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 18 22:33:03 zombie coolercontrold[20550]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                              [0;1;39mCoolerControlD:     3.0.2[0m
+                                              [0;1;39mName:               Arch Linux[0m
+                                              [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                              [0;1;39mHost:               zombie[0m
+                                              [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                              [0;1;39mArch:               x86_64[0m
+                                              [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                              [0;1;39mBoard Name:         G512LI[0m
+                                              [0;1;39mBoard Version:      1.0[0m
+                                              [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                              [0;1;39mBIOS Version:       5.17[0m
+                                              [0;1;39mXDG Desktops:       Hyprland[0m
+                                              [0;1;39mXDG Session Types:  wayland, unspecified[0m
+Nov 18 22:33:03 zombie coolercontrold[20550]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 18 22:33:05 zombie coolercontrold[20550]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 18 22:33:05 zombie coolercontrold[20550]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 18 22:33:05 zombie coolercontrold[20550]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 18 22:33:05 zombie coolercontrold[20550]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 18 22:33:05 zombie coolercontrold[20550]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 18 22:33:05 zombie coolercontrold[20550]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"locations":["00000000:01:00.0"],"driver name":["nvml:13.580.105.08"],"driver version":["580.105.08"]}}[0m
+Nov 18 22:33:05 zombie coolercontrold[20550]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon8","/sys/devices/platform/coretemp.0","platform:coretemp"],"driver name":[""]}}[0m
+Nov 18 22:33:05 zombie coolercontrold[20550]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 18 22:33:05 zombie coolercontrold[20550]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 18 22:33:05 zombie coolercontrold[20550]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"asus":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"],"driver name":["asus-nb-wmi"]},"pch_cometlake":{"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"],"driver version":["6.17.8-arch1-1"],"driver name":[""]},"nvme":{"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"acpitz":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"],"driver name":[""]},"iwlwifi_1":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon7","/sys/devices/virtual/thermal/thermal_zone5"],"driver name":[""]}}[0m
+Nov 18 22:33:05 zombie coolercontrold[20550]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 18 22:33:05 zombie coolercontrold[20550]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 18 22:33:05 zombie coolercontrold[20550]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 18 22:33:05 zombie coolercontrold[20550]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 18 22:33:05 zombie coolercontrold[20550]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 18 23:06:28 zombie systemd[1]: Stopping CoolerControl Daemon...
+Nov 18 23:06:29 zombie coolercontrold[20550]: [0;1;39m[0;1;31m[0;1;39mMain process shutting down[0m
+Nov 18 23:06:29 zombie coolercontrold[20550]: [0;1;39m[0;1;31m[0;1;39mCPU Repository shutdown[0m
+Nov 18 23:06:29 zombie coolercontrold[20550]: [0;1;39m[0;1;31m[0;1;39mGPU Repository shutdown[0m
+Nov 18 23:06:29 zombie coolercontrold[20550]: [0;1;39m[0;1;31m[0;1;39mHWMON Repository shutdown[0m
+Nov 18 23:06:29 zombie coolercontrold[20550]: [0;1;39m[0;1;31m[0;1;39mCUSTOM_SENSORS Repository shutdown[0m
+Nov 18 23:06:29 zombie coolercontrold[20550]: [0;1;39m[0;1;31m[0;1;39mShutdown Complete[0m
+Nov 18 23:06:29 zombie systemd[1]: coolercontrold.service: Deactivated successfully.
+Nov 18 23:06:29 zombie systemd[1]: Stopped CoolerControl Daemon.
+Nov 18 23:06:29 zombie systemd[1]: coolercontrold.service: Consumed 47.337s CPU time, 53.6M memory peak.
+[0;1;39m-- Boot ea81e10d0f264a75bd5b3fa38eb8242d --[0m
+Nov 18 23:07:05 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 18 23:07:05 zombie coolercontrold[568]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                            [0;1;39mCoolerControlD:     3.0.2[0m
+                                            [0;1;39mName:               Arch Linux[0m
+                                            [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                            [0;1;39mHost:               zombie[0m
+                                            [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                            [0;1;39mArch:               x86_64[0m
+                                            [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                            [0;1;39mBoard Name:         G512LI[0m
+                                            [0;1;39mBoard Version:      1.0[0m
+                                            [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                            [0;1;39mBIOS Version:       5.17[0m
+Nov 18 23:07:05 zombie coolercontrold[568]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 18 23:07:07 zombie coolercontrold[568]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 18 23:07:08 zombie coolercontrold[568]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 18 23:07:08 zombie coolercontrold[568]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 18 23:07:08 zombie coolercontrold[568]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 18 23:07:08 zombie coolercontrold[568]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 18 23:07:08 zombie coolercontrold[568]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"driver version":["580.105.08"],"locations":["00000000:01:00.0"],"driver name":["nvml:13.580.105.08"]}}[0m
+Nov 18 23:07:08 zombie coolercontrold[568]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 18 23:07:08 zombie coolercontrold[568]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"locations":["/sys/class/hwmon/hwmon7","/sys/devices/platform/coretemp.0","platform:coretemp"],"driver version":["6.17.8-arch1-1"],"driver name":[""]}}[0m
+Nov 18 23:07:08 zombie coolercontrold[568]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 18 23:07:08 zombie coolercontrold[568]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"nvme":{"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"acpitz":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"],"driver name":[""]},"pch_cometlake":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"],"driver name":[""]},"iwlwifi_1":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon8","/sys/devices/virtual/thermal/thermal_zone6"],"driver name":[""]},"asus":{"driver version":["6.17.8-arch1-1"],"driver name":["asus-nb-wmi"],"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"]}}[0m
+Nov 18 23:07:08 zombie coolercontrold[568]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 18 23:07:08 zombie coolercontrold[568]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 18 23:07:08 zombie coolercontrold[568]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 18 23:07:08 zombie coolercontrold[568]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 18 23:07:08 zombie coolercontrold[568]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 18 23:43:20 zombie systemd[1]: Stopping CoolerControl Daemon...
+Nov 18 23:43:21 zombie coolercontrold[568]: [0;1;39m[0;1;31m[0;1;39mMain process shutting down[0m
+Nov 18 23:43:21 zombie coolercontrold[568]: [0;1;39m[0;1;31m[0;1;39mCPU Repository shutdown[0m
+Nov 18 23:43:21 zombie coolercontrold[568]: [0;1;39m[0;1;31m[0;1;39mGPU Repository shutdown[0m
+Nov 18 23:43:21 zombie coolercontrold[568]: [0;1;39m[0;1;31m[0;1;39mHWMON Repository shutdown[0m
+Nov 18 23:43:21 zombie coolercontrold[568]: [0;1;39m[0;1;31m[0;1;39mCUSTOM_SENSORS Repository shutdown[0m
+Nov 18 23:43:21 zombie coolercontrold[568]: [0;1;39m[0;1;31m[0;1;39mShutdown Complete[0m
+Nov 18 23:43:21 zombie systemd[1]: coolercontrold.service: Deactivated successfully.
+Nov 18 23:43:21 zombie systemd[1]: Stopped CoolerControl Daemon.
+Nov 18 23:43:21 zombie systemd[1]: coolercontrold.service: Consumed 50.893s CPU time, 92.7M memory peak.
+[0;1;39m-- Boot e008fdd9b6ac49c4826cded8012482f9 --[0m
+Nov 18 23:44:05 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 18 23:44:05 zombie coolercontrold[550]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                            [0;1;39mCoolerControlD:     3.0.2[0m
+                                            [0;1;39mName:               Arch Linux[0m
+                                            [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                            [0;1;39mHost:               zombie[0m
+                                            [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                            [0;1;39mArch:               x86_64[0m
+                                            [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                            [0;1;39mBoard Name:         G512LI[0m
+                                            [0;1;39mBoard Version:      1.0[0m
+                                            [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                            [0;1;39mBIOS Version:       5.17[0m
+Nov 18 23:44:05 zombie coolercontrold[550]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 18 23:44:07 zombie coolercontrold[550]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 18 23:44:08 zombie coolercontrold[550]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 18 23:44:08 zombie coolercontrold[550]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 18 23:44:08 zombie coolercontrold[550]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 18 23:44:08 zombie coolercontrold[550]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 18 23:44:08 zombie coolercontrold[550]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"driver name":["nvml:13.580.105.08"],"driver version":["580.105.08"],"locations":["00000000:01:00.0"]}}[0m
+Nov 18 23:44:08 zombie coolercontrold[550]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 18 23:44:08 zombie coolercontrold[550]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"locations":["/sys/class/hwmon/hwmon8","/sys/devices/platform/coretemp.0","platform:coretemp"],"driver name":[""],"driver version":["6.17.8-arch1-1"]}}[0m
+Nov 18 23:44:08 zombie coolercontrold[550]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 18 23:44:08 zombie coolercontrold[550]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"nvme":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"],"driver name":[""]},"asus":{"driver name":["asus-nb-wmi"],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"]},"acpitz":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"]},"iwlwifi_1":{"locations":["/sys/class/hwmon/hwmon7","/sys/devices/virtual/thermal/thermal_zone5"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"pch_cometlake":{"driver name":[""],"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"],"driver version":["6.17.8-arch1-1"]}}[0m
+Nov 18 23:44:08 zombie coolercontrold[550]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 18 23:44:08 zombie coolercontrold[550]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 18 23:44:08 zombie coolercontrold[550]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 18 23:44:08 zombie coolercontrold[550]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 18 23:44:08 zombie coolercontrold[550]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 18 23:48:52 zombie systemd[1]: Stopping CoolerControl Daemon...
+Nov 18 23:48:52 zombie coolercontrold[550]: [0;1;39m[0;1;31m[0;1;39mMain process shutting down[0m
+Nov 18 23:48:52 zombie coolercontrold[550]: [0;1;39m[0;1;31m[0;1;39mCPU Repository shutdown[0m
+Nov 18 23:48:52 zombie coolercontrold[550]: [0;1;39m[0;1;31m[0;1;39mGPU Repository shutdown[0m
+Nov 18 23:48:52 zombie coolercontrold[550]: [0;1;39m[0;1;31m[0;1;39mHWMON Repository shutdown[0m
+Nov 18 23:48:52 zombie coolercontrold[550]: [0;1;39m[0;1;31m[0;1;39mCUSTOM_SENSORS Repository shutdown[0m
+Nov 18 23:48:52 zombie coolercontrold[550]: [0;1;39m[0;1;31m[0;1;39mShutdown Complete[0m
+Nov 18 23:48:52 zombie systemd[1]: coolercontrold.service: Deactivated successfully.
+Nov 18 23:48:52 zombie systemd[1]: Stopped CoolerControl Daemon.
+Nov 18 23:48:52 zombie systemd[1]: coolercontrold.service: Consumed 6.782s CPU time, 92.7M memory peak.
+[0;1;39m-- Boot e76f747120744c23a7faa0d295414d53 --[0m
+Nov 18 23:49:40 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 18 23:49:40 zombie coolercontrold[570]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                            [0;1;39mCoolerControlD:     3.0.2[0m
+                                            [0;1;39mName:               Arch Linux[0m
+                                            [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                            [0;1;39mHost:               zombie[0m
+                                            [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                            [0;1;39mArch:               x86_64[0m
+                                            [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                            [0;1;39mBoard Name:         G512LI[0m
+                                            [0;1;39mBoard Version:      1.0[0m
+                                            [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                            [0;1;39mBIOS Version:       5.17[0m
+Nov 18 23:49:40 zombie coolercontrold[570]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 18 23:49:42 zombie coolercontrold[570]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 18 23:49:43 zombie coolercontrold[570]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 18 23:49:43 zombie coolercontrold[570]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 18 23:49:43 zombie coolercontrold[570]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 18 23:49:43 zombie coolercontrold[570]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 18 23:49:43 zombie coolercontrold[570]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"driver name":["nvml:13.580.105.08"],"driver version":["580.105.08"],"locations":["00000000:01:00.0"]}}[0m
+Nov 18 23:49:43 zombie coolercontrold[570]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 18 23:49:43 zombie coolercontrold[570]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 18 23:49:43 zombie coolercontrold[570]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"locations":["/sys/class/hwmon/hwmon7","/sys/devices/platform/coretemp.0","platform:coretemp"],"driver version":["6.17.8-arch1-1"],"driver name":[""]}}[0m
+Nov 18 23:49:43 zombie coolercontrold[570]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"asus":{"driver name":["asus-nb-wmi"],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"]},"acpitz":{"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"],"driver version":["6.17.8-arch1-1"],"driver name":[""]},"iwlwifi_1":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon8","/sys/devices/virtual/thermal/thermal_zone5"]},"pch_cometlake":{"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"nvme":{"driver version":["6.17.8-arch1-1"],"driver name":[""],"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"]}}[0m
+Nov 18 23:49:43 zombie coolercontrold[570]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 18 23:49:43 zombie coolercontrold[570]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 18 23:49:43 zombie coolercontrold[570]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 18 23:49:43 zombie coolercontrold[570]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 18 23:49:43 zombie coolercontrold[570]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 18 23:50:04 zombie systemd[1]: Stopping CoolerControl Daemon...
+Nov 18 23:50:05 zombie coolercontrold[570]: [0;1;39m[0;1;31m[0;1;39mMain process shutting down[0m
+Nov 18 23:50:05 zombie coolercontrold[570]: [0;1;39m[0;1;31m[0;1;39mCPU Repository shutdown[0m
+Nov 18 23:50:05 zombie coolercontrold[570]: [0;1;39m[0;1;31m[0;1;39mGPU Repository shutdown[0m
+Nov 18 23:50:05 zombie coolercontrold[570]: [0;1;39m[0;1;31m[0;1;39mHWMON Repository shutdown[0m
+Nov 18 23:50:05 zombie coolercontrold[570]: [0;1;39m[0;1;31m[0;1;39mCUSTOM_SENSORS Repository shutdown[0m
+Nov 18 23:50:05 zombie coolercontrold[570]: [0;1;39m[0;1;31m[0;1;39mShutdown Complete[0m
+Nov 18 23:50:05 zombie systemd[1]: coolercontrold.service: Deactivated successfully.
+Nov 18 23:50:05 zombie systemd[1]: Stopped CoolerControl Daemon.
+Nov 18 23:50:05 zombie systemd[1]: coolercontrold.service: Consumed 518ms CPU time, 67.4M memory peak.
+[0;1;39m-- Boot e0b2fe2b96884e0aa466b12086e754fd --[0m
+Nov 18 23:50:22 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 18 23:50:22 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                            [0;1;39mCoolerControlD:     3.0.2[0m
+                                            [0;1;39mName:               Arch Linux[0m
+                                            [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                            [0;1;39mHost:               zombie[0m
+                                            [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                            [0;1;39mArch:               x86_64[0m
+                                            [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                            [0;1;39mBoard Name:         G512LI[0m
+                                            [0;1;39mBoard Version:      1.0[0m
+                                            [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                            [0;1;39mBIOS Version:       5.17[0m
+Nov 18 23:50:22 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 18 23:50:24 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 18 23:50:24 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 18 23:50:24 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 18 23:50:24 zombie coolercontrold[518]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 18 23:50:24 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 18 23:50:24 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"driver name":["nvml:13.580.105.08"],"driver version":["580.105.08"],"locations":["00000000:01:00.0"]}}[0m
+Nov 18 23:50:24 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon8","/sys/devices/platform/coretemp.0","platform:coretemp"]}}[0m
+Nov 18 23:50:24 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 18 23:50:24 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 18 23:50:24 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"asus":{"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"],"driver name":["asus-nb-wmi"],"driver version":["6.17.8-arch1-1"]},"iwlwifi_1":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon7","/sys/devices/virtual/thermal/thermal_zone5"]},"nvme":{"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"],"driver version":["6.17.8-arch1-1"],"driver name":[""]},"acpitz":{"driver version":["6.17.8-arch1-1"],"driver name":[""],"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"]},"pch_cometlake":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"]}}[0m
+Nov 18 23:50:24 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 18 23:50:24 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 18 23:50:24 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 18 23:50:24 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 18 23:50:24 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 19 00:10:59 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 19 00:11:12 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 19 00:11:13 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 19 00:11:15 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 19 00:11:15 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 19 00:11:38 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 19 00:12:33 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 19 00:12:33 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 19 00:12:35 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 19 00:12:35 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 19 00:31:49 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 19 00:32:35 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 19 00:32:35 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 19 00:32:37 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 19 00:32:37 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 19 00:53:01 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 19 00:53:12 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 19 00:53:12 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 19 00:53:14 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 19 00:53:14 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 19 00:53:38 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 19 00:54:09 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 19 00:54:09 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 19 00:54:11 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 19 00:54:11 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 19 01:02:53 zombie coolercontrold[518]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+[0;1;39m-- Boot b6245904113c4cdabea40a436a4a67bd --[0m
+Nov 19 01:02:34 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 19 01:02:34 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                            [0;1;39mCoolerControlD:     3.0.2[0m
+                                            [0;1;39mName:               Arch Linux[0m
+                                            [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                            [0;1;39mHost:               zombie[0m
+                                            [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                            [0;1;39mArch:               x86_64[0m
+                                            [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                            [0;1;39mBoard Name:         G512LI[0m
+                                            [0;1;39mBoard Version:      1.0[0m
+                                            [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                            [0;1;39mBIOS Version:       5.17[0m
+Nov 19 01:02:34 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 19 01:02:36 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 19 01:02:37 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 19 01:02:37 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 19 01:02:37 zombie coolercontrold[579]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 19 01:02:37 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 19 01:02:37 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"locations":["00000000:01:00.0"],"driver name":["nvml:13.580.105.08"],"driver version":["580.105.08"]}}[0m
+Nov 19 01:02:37 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 19 01:02:37 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"driver version":["6.17.8-arch1-1"],"driver name":[""],"locations":["/sys/class/hwmon/hwmon8","/sys/devices/platform/coretemp.0","platform:coretemp"]}}[0m
+Nov 19 01:02:37 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 19 01:02:37 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"pch_cometlake":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"]},"acpitz":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"]},"asus":{"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"],"driver version":["6.17.8-arch1-1"],"driver name":["asus-nb-wmi"]},"nvme":{"driver version":["6.17.8-arch1-1"],"driver name":[""],"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"]},"iwlwifi_1":{"locations":["/sys/class/hwmon/hwmon7","/sys/devices/virtual/thermal/thermal_zone5"],"driver name":[""],"driver version":["6.17.8-arch1-1"]}}[0m
+Nov 19 01:02:37 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 19 01:02:37 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 19 01:02:37 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 19 01:02:37 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 19 01:02:37 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 19 21:15:34 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 19 21:29:09 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 19 21:29:09 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 19 21:29:11 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 19 21:29:11 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 20 02:39:10 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 20 10:30:21 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 20 10:30:21 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 20 10:30:23 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 20 10:30:23 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 20 10:30:59 zombie systemd[1]: Stopping CoolerControl Daemon...
+Nov 20 10:30:59 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mMain process shutting down[0m
+Nov 20 10:30:59 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mCPU Repository shutdown[0m
+Nov 20 10:30:59 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mGPU Repository shutdown[0m
+Nov 20 10:30:59 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mHWMON Repository shutdown[0m
+Nov 20 10:30:59 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mCUSTOM_SENSORS Repository shutdown[0m
+Nov 20 10:30:59 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mShutdown Complete[0m
+Nov 20 10:30:59 zombie systemd[1]: coolercontrold.service: Deactivated successfully.
+Nov 20 10:30:59 zombie systemd[1]: Stopped CoolerControl Daemon.
+Nov 20 10:30:59 zombie systemd[1]: [0;1;39m[0;1;31m[0;1;39mcoolercontrold.service: Consumed 10min 32.524s CPU time, 92.6M memory peak, 20.3M memory swap peak.[0m
+[0;1;39m-- Boot 7469ef5f7f624fabafa173004d9f7ccc --[0m
+Nov 20 10:33:18 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 20 10:33:18 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                            [0;1;39mCoolerControlD:     3.0.2[0m
+                                            [0;1;39mName:               Arch Linux[0m
+                                            [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                            [0;1;39mHost:               zombie[0m
+                                            [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                            [0;1;39mArch:               x86_64[0m
+                                            [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                            [0;1;39mBoard Name:         G512LI[0m
+                                            [0;1;39mBoard Version:      1.0[0m
+                                            [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                            [0;1;39mBIOS Version:       5.17[0m
+Nov 20 10:33:18 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 20 10:33:20 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 20 10:33:20 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 20 10:33:20 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 20 10:33:20 zombie coolercontrold[575]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 20 10:33:20 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 20 10:33:20 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"locations":["00000000:01:00.0"],"driver name":["nvml:13.580.105.08"],"driver version":["580.105.08"]}}[0m
+Nov 20 10:33:20 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 20 10:33:20 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"locations":["/sys/class/hwmon/hwmon7","/sys/devices/platform/coretemp.0","platform:coretemp"],"driver version":["6.17.8-arch1-1"],"driver name":[""]}}[0m
+Nov 20 10:33:20 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 20 10:33:20 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"acpitz":{"driver name":[""],"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"],"driver version":["6.17.8-arch1-1"]},"iwlwifi_1":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon8","/sys/devices/virtual/thermal/thermal_zone6"]},"asus":{"driver name":["asus-nb-wmi"],"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"],"driver version":["6.17.8-arch1-1"]},"pch_cometlake":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"]},"nvme":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"],"driver name":[""]}}[0m
+Nov 20 10:33:20 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 20 10:33:20 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 20 10:33:20 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 20 10:33:20 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 20 10:33:20 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 20 10:33:45 zombie systemd[1]: Stopping CoolerControl Daemon...
+Nov 20 10:33:46 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mMain process shutting down[0m
+Nov 20 10:33:46 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mCPU Repository shutdown[0m
+Nov 20 10:33:46 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mGPU Repository shutdown[0m
+Nov 20 10:33:46 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mHWMON Repository shutdown[0m
+Nov 20 10:33:46 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mCUSTOM_SENSORS Repository shutdown[0m
+Nov 20 10:33:46 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mShutdown Complete[0m
+Nov 20 10:33:46 zombie systemd[1]: coolercontrold.service: Deactivated successfully.
+Nov 20 10:33:46 zombie systemd[1]: Stopped CoolerControl Daemon.
+Nov 20 10:33:46 zombie systemd[1]: coolercontrold.service: Consumed 538ms CPU time, 72.9M memory peak.
+[0;1;39m-- Boot f23ec949d59a41c68cbffdb1a89954d7 --[0m
+Nov 20 10:34:54 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 20 10:34:54 zombie coolercontrold[571]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                            [0;1;39mCoolerControlD:     3.0.2[0m
+                                            [0;1;39mName:               Arch Linux[0m
+                                            [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                            [0;1;39mHost:               zombie[0m
+                                            [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                            [0;1;39mArch:               x86_64[0m
+                                            [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                            [0;1;39mBoard Name:         G512LI[0m
+                                            [0;1;39mBoard Version:      1.0[0m
+                                            [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                            [0;1;39mBIOS Version:       5.17[0m
+Nov 20 10:34:54 zombie coolercontrold[571]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 20 10:34:56 zombie coolercontrold[571]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 20 10:34:56 zombie coolercontrold[571]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 20 10:34:56 zombie coolercontrold[571]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 20 10:34:56 zombie coolercontrold[571]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 20 10:34:56 zombie coolercontrold[571]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 20 10:34:56 zombie coolercontrold[571]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"locations":["00000000:01:00.0"],"driver name":["nvml:13.580.105.08"],"driver version":["580.105.08"]}}[0m
+Nov 20 10:34:56 zombie coolercontrold[571]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 20 10:34:56 zombie coolercontrold[571]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon8","/sys/devices/platform/coretemp.0","platform:coretemp"],"driver name":[""]}}[0m
+Nov 20 10:34:56 zombie coolercontrold[571]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 20 10:34:56 zombie coolercontrold[571]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"acpitz":{"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"asus":{"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"],"driver name":["asus-nb-wmi"],"driver version":["6.17.8-arch1-1"]},"pch_cometlake":{"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"nvme":{"driver version":["6.17.8-arch1-1"],"driver name":[""],"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"]},"iwlwifi_1":{"driver name":[""],"locations":["/sys/class/hwmon/hwmon7","/sys/devices/virtual/thermal/thermal_zone4"],"driver version":["6.17.8-arch1-1"]}}[0m
+Nov 20 10:34:56 zombie coolercontrold[571]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 20 10:34:56 zombie coolercontrold[571]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 20 10:34:56 zombie coolercontrold[571]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 20 10:34:56 zombie coolercontrold[571]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 20 10:34:56 zombie coolercontrold[571]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 20 10:52:51 zombie systemd[1]: Stopping CoolerControl Daemon...
+Nov 20 10:52:52 zombie coolercontrold[571]: [0;1;39m[0;1;31m[0;1;39mMain process shutting down[0m
+Nov 20 10:52:52 zombie coolercontrold[571]: [0;1;39m[0;1;31m[0;1;39mCPU Repository shutdown[0m
+Nov 20 10:52:52 zombie coolercontrold[571]: [0;1;39m[0;1;31m[0;1;39mGPU Repository shutdown[0m
+Nov 20 10:52:52 zombie coolercontrold[571]: [0;1;39m[0;1;31m[0;1;39mHWMON Repository shutdown[0m
+Nov 20 10:52:52 zombie coolercontrold[571]: [0;1;39m[0;1;31m[0;1;39mCUSTOM_SENSORS Repository shutdown[0m
+Nov 20 10:52:52 zombie coolercontrold[571]: [0;1;39m[0;1;31m[0;1;39mShutdown Complete[0m
+Nov 20 10:52:52 zombie systemd[1]: coolercontrold.service: Deactivated successfully.
+Nov 20 10:52:52 zombie systemd[1]: Stopped CoolerControl Daemon.
+Nov 20 10:52:52 zombie systemd[1]: coolercontrold.service: Consumed 29.102s CPU time, 105.8M memory peak, 25.3M memory swap peak.
+[0;1;39m-- Boot f63400dccde3464bb8663cd4f9dda81d --[0m
+Nov 20 10:59:11 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 20 10:59:11 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                            [0;1;39mCoolerControlD:     3.0.2[0m
+                                            [0;1;39mName:               Arch Linux[0m
+                                            [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                            [0;1;39mHost:               zombie[0m
+                                            [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                            [0;1;39mArch:               x86_64[0m
+                                            [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                            [0;1;39mBoard Name:         G512LI[0m
+                                            [0;1;39mBoard Version:      1.0[0m
+                                            [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                            [0;1;39mBIOS Version:       5.17[0m
+Nov 20 10:59:11 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 20 10:59:13 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 20 10:59:13 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 20 10:59:13 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 20 10:59:13 zombie coolercontrold[575]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 20 10:59:13 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 20 10:59:13 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"driver name":["nvml:13.580.105.08"],"driver version":["580.105.08"],"locations":["00000000:01:00.0"]}}[0m
+Nov 20 10:59:13 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 20 10:59:13 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon8","/sys/devices/platform/coretemp.0","platform:coretemp"],"driver name":[""]}}[0m
+Nov 20 10:59:13 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 20 10:59:13 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"asus":{"driver version":["6.17.8-arch1-1"],"driver name":["asus-nb-wmi"],"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"]},"nvme":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"],"driver name":[""]},"pch_cometlake":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"],"driver name":[""]},"iwlwifi_1":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon7","/sys/devices/virtual/thermal/thermal_zone5"],"driver name":[""]},"acpitz":{"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"],"driver version":["6.17.8-arch1-1"],"driver name":[""]}}[0m
+Nov 20 10:59:13 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 20 10:59:13 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 20 10:59:13 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 20 10:59:13 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 20 10:59:13 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 20 11:07:22 zombie systemd[1]: Stopping CoolerControl Daemon...
+Nov 20 11:07:23 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mMain process shutting down[0m
+Nov 20 11:07:23 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mCPU Repository shutdown[0m
+Nov 20 11:07:23 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mGPU Repository shutdown[0m
+Nov 20 11:07:23 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mHWMON Repository shutdown[0m
+Nov 20 11:07:23 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mCUSTOM_SENSORS Repository shutdown[0m
+Nov 20 11:07:23 zombie coolercontrold[575]: [0;1;39m[0;1;31m[0;1;39mShutdown Complete[0m
+Nov 20 11:07:23 zombie systemd[1]: coolercontrold.service: Deactivated successfully.
+Nov 20 11:07:23 zombie systemd[1]: Stopped CoolerControl Daemon.
+Nov 20 11:07:23 zombie systemd[1]: coolercontrold.service: Consumed 10.871s CPU time, 92.5M memory peak.
+[0;1;39m-- Boot 3af121198afe4f579fd2d83430d41a3d --[0m
+Nov 20 11:12:56 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 20 11:12:56 zombie coolercontrold[546]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                            [0;1;39mCoolerControlD:     3.0.2[0m
+                                            [0;1;39mName:               Arch Linux[0m
+                                            [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                            [0;1;39mHost:               zombie[0m
+                                            [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                            [0;1;39mArch:               x86_64[0m
+                                            [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                            [0;1;39mBoard Name:         G512LI[0m
+                                            [0;1;39mBoard Version:      1.0[0m
+                                            [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                            [0;1;39mBIOS Version:       5.17[0m
+Nov 20 11:12:56 zombie coolercontrold[546]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 20 11:12:58 zombie coolercontrold[546]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 20 11:12:59 zombie coolercontrold[546]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 20 11:12:59 zombie coolercontrold[546]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 20 11:12:59 zombie coolercontrold[546]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 20 11:12:59 zombie coolercontrold[546]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 20 11:12:59 zombie coolercontrold[546]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"locations":["00000000:01:00.0"],"driver name":["nvml:13.580.105.08"],"driver version":["580.105.08"]}}[0m
+Nov 20 11:12:59 zombie coolercontrold[546]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 20 11:12:59 zombie coolercontrold[546]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon7","/sys/devices/platform/coretemp.0","platform:coretemp"]}}[0m
+Nov 20 11:12:59 zombie coolercontrold[546]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 20 11:12:59 zombie coolercontrold[546]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"nvme":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"],"driver name":[""]},"iwlwifi_1":{"locations":["/sys/class/hwmon/hwmon8","/sys/devices/virtual/thermal/thermal_zone5"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"asus":{"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"],"driver name":["asus-nb-wmi"],"driver version":["6.17.8-arch1-1"]},"pch_cometlake":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"]},"acpitz":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"],"driver name":[""]}}[0m
+Nov 20 11:12:59 zombie coolercontrold[546]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 20 11:12:59 zombie coolercontrold[546]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 20 11:12:59 zombie coolercontrold[546]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 20 11:12:59 zombie coolercontrold[546]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 20 11:12:59 zombie coolercontrold[546]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 20 11:14:37 zombie systemd[1]: Stopping CoolerControl Daemon...
+Nov 20 11:14:38 zombie coolercontrold[546]: [0;1;39m[0;1;31m[0;1;39mMain process shutting down[0m
+Nov 20 11:14:38 zombie coolercontrold[546]: [0;1;39m[0;1;31m[0;1;39mCPU Repository shutdown[0m
+Nov 20 11:14:38 zombie coolercontrold[546]: [0;1;39m[0;1;31m[0;1;39mGPU Repository shutdown[0m
+Nov 20 11:14:38 zombie coolercontrold[546]: [0;1;39m[0;1;31m[0;1;39mHWMON Repository shutdown[0m
+Nov 20 11:14:38 zombie coolercontrold[546]: [0;1;39m[0;1;31m[0;1;39mCUSTOM_SENSORS Repository shutdown[0m
+Nov 20 11:14:38 zombie coolercontrold[546]: [0;1;39m[0;1;31m[0;1;39mShutdown Complete[0m
+Nov 20 11:14:38 zombie systemd[1]: coolercontrold.service: Deactivated successfully.
+Nov 20 11:14:38 zombie systemd[1]: Stopped CoolerControl Daemon.
+Nov 20 11:14:38 zombie systemd[1]: coolercontrold.service: Consumed 1.864s CPU time, 84.1M memory peak.
+[0;1;39m-- Boot c2d8cee406e944f4980fe6b1abb5fccc --[0m
+Nov 20 11:27:26 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 20 11:27:26 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                            [0;1;39mCoolerControlD:     3.0.2[0m
+                                            [0;1;39mName:               Arch Linux[0m
+                                            [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                            [0;1;39mHost:               zombie[0m
+                                            [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                            [0;1;39mArch:               x86_64[0m
+                                            [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                            [0;1;39mBoard Name:         G512LI[0m
+                                            [0;1;39mBoard Version:      1.0[0m
+                                            [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                            [0;1;39mBIOS Version:       5.17[0m
+Nov 20 11:27:26 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 20 11:27:28 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 20 11:27:29 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 20 11:27:29 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 20 11:27:29 zombie coolercontrold[549]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 20 11:27:29 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 20 11:27:29 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"locations":["00000000:01:00.0"],"driver version":["580.105.08"],"driver name":["nvml:13.580.105.08"]}}[0m
+Nov 20 11:27:29 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 20 11:27:29 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon8","/sys/devices/platform/coretemp.0","platform:coretemp"],"driver name":[""]}}[0m
+Nov 20 11:27:29 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 20 11:27:29 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"nvme":{"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"acpitz":{"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"iwlwifi_1":{"driver version":["6.17.8-arch1-1"],"driver name":[""],"locations":["/sys/class/hwmon/hwmon7","/sys/devices/virtual/thermal/thermal_zone5"]},"asus":{"driver version":["6.17.8-arch1-1"],"driver name":["asus-nb-wmi"],"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"]},"pch_cometlake":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"],"driver name":[""]}}[0m
+Nov 20 11:27:29 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 20 11:27:29 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 20 11:27:29 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 20 11:27:29 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 20 11:27:29 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 20 11:28:09 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 20 11:30:47 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 20 11:30:47 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 20 11:30:49 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 20 11:30:49 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 20 12:49:42 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 20 13:03:33 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 20 13:03:33 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 20 13:03:35 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 20 13:03:35 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 20 17:03:30 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 20 20:03:04 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 20 20:03:04 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 20 20:03:06 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 20 20:03:06 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 20 20:03:55 zombie systemd[1]: Stopping CoolerControl Daemon...
+Nov 20 20:03:55 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mMain process shutting down[0m
+Nov 20 20:03:55 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mCPU Repository shutdown[0m
+Nov 20 20:03:55 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mGPU Repository shutdown[0m
+Nov 20 20:03:55 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mHWMON Repository shutdown[0m
+Nov 20 20:03:55 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mCUSTOM_SENSORS Repository shutdown[0m
+Nov 20 20:03:55 zombie coolercontrold[549]: [0;1;39m[0;1;31m[0;1;39mShutdown Complete[0m
+Nov 20 20:03:55 zombie systemd[1]: coolercontrold.service: Deactivated successfully.
+Nov 20 20:03:55 zombie systemd[1]: Stopped CoolerControl Daemon.
+Nov 20 20:03:55 zombie systemd[1]: coolercontrold.service: Consumed 7min 16.477s CPU time, 84.6M memory peak.
+[0;1;39m-- Boot d7988c1a50cb469597f4131fffdb0ed4 --[0m
+Nov 20 20:05:03 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 20 20:05:04 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                            [0;1;39mCoolerControlD:     3.0.2[0m
+                                            [0;1;39mName:               Arch Linux[0m
+                                            [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                            [0;1;39mHost:               zombie[0m
+                                            [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                            [0;1;39mArch:               x86_64[0m
+                                            [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                            [0;1;39mBoard Name:         G512LI[0m
+                                            [0;1;39mBoard Version:      1.0[0m
+                                            [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                            [0;1;39mBIOS Version:       5.17[0m
+Nov 20 20:05:04 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 20 20:05:06 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 20 20:05:06 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 20 20:05:06 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 20 20:05:06 zombie coolercontrold[566]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 20 20:05:06 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 20 20:05:06 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"driver name":["nvml:13.580.105.08"],"driver version":["580.105.08"],"locations":["00000000:01:00.0"]}}[0m
+Nov 20 20:05:06 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 20 20:05:06 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"driver name":[""],"locations":["/sys/class/hwmon/hwmon7","/sys/devices/platform/coretemp.0","platform:coretemp"],"driver version":["6.17.8-arch1-1"]}}[0m
+Nov 20 20:05:06 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 20 20:05:06 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"iwlwifi_1":{"locations":["/sys/class/hwmon/hwmon8","/sys/devices/virtual/thermal/thermal_zone5"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"asus":{"driver name":["asus-nb-wmi"],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"]},"nvme":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"],"driver name":[""]},"acpitz":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"]},"pch_cometlake":{"driver version":["6.17.8-arch1-1"],"driver name":[""],"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"]}}[0m
+Nov 20 20:05:06 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 20 20:05:06 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 20 20:05:06 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 20 20:05:06 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 20 20:05:06 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 20 21:30:14 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 20 21:38:52 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 20 21:38:52 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 20 21:38:54 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 20 21:38:54 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 20 23:21:20 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 20 23:21:47 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 20 23:21:47 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 20 23:21:49 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 20 23:21:49 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 20 23:23:35 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 20 23:23:41 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 20 23:23:41 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 20 23:23:43 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 20 23:23:43 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 20 23:24:07 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 20 23:30:40 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 20 23:30:40 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 20 23:30:42 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 20 23:30:42 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 20 23:31:18 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 20 23:31:44 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 20 23:31:45 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 20 23:31:47 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 20 23:31:47 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 20 23:31:51 zombie systemd[1]: Stopping CoolerControl Daemon...
+Nov 20 23:31:51 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mMain process shutting down[0m
+Nov 20 23:31:51 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mCPU Repository shutdown[0m
+Nov 20 23:31:51 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mGPU Repository shutdown[0m
+Nov 20 23:31:51 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mHWMON Repository shutdown[0m
+Nov 20 23:31:51 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mCUSTOM_SENSORS Repository shutdown[0m
+Nov 20 23:31:51 zombie coolercontrold[566]: [0;1;39m[0;1;31m[0;1;39mShutdown Complete[0m
+Nov 20 23:31:51 zombie systemd[1]: coolercontrold.service: Deactivated successfully.
+Nov 20 23:31:51 zombie systemd[1]: Stopped CoolerControl Daemon.
+Nov 20 23:31:51 zombie systemd[1]: coolercontrold.service: Consumed 4min 6.310s CPU time, 92.5M memory peak, 18.9M memory swap peak.
+[0;1;39m-- Boot 57a270ae2b784c2c93aadc7f6e63e008 --[0m
+Nov 20 23:32:33 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 20 23:32:33 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                            [0;1;39mCoolerControlD:     3.0.2[0m
+                                            [0;1;39mName:               Arch Linux[0m
+                                            [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                            [0;1;39mHost:               zombie[0m
+                                            [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                            [0;1;39mArch:               x86_64[0m
+                                            [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                            [0;1;39mBoard Name:         G512LI[0m
+                                            [0;1;39mBoard Version:      1.0[0m
+                                            [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                            [0;1;39mBIOS Version:       5.17[0m
+Nov 20 23:32:33 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 20 23:32:35 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 20 23:32:35 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 20 23:32:35 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 20 23:32:35 zombie coolercontrold[573]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 20 23:32:35 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 20 23:32:35 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"locations":["00000000:01:00.0"],"driver name":["nvml:13.580.105.08"],"driver version":["580.105.08"]}}[0m
+Nov 20 23:32:35 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 20 23:32:35 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon8","/sys/devices/platform/coretemp.0","platform:coretemp"],"driver name":[""]}}[0m
+Nov 20 23:32:35 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 20 23:32:35 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"asus":{"driver name":["asus-nb-wmi"],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"]},"pch_cometlake":{"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"iwlwifi_1":{"locations":["/sys/class/hwmon/hwmon7","/sys/devices/virtual/thermal/thermal_zone4"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"acpitz":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"],"driver name":[""]},"nvme":{"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"],"driver name":[""],"driver version":["6.17.8-arch1-1"]}}[0m
+Nov 20 23:32:35 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 20 23:32:35 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 20 23:32:35 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 20 23:32:35 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 20 23:32:35 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 20 23:33:08 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 20 23:33:13 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 20 23:33:13 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 20 23:33:15 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 20 23:33:15 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 20 23:33:40 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 20 23:36:39 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 20 23:36:39 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 20 23:36:41 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 20 23:36:41 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 21 06:36:54 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 21 12:13:08 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 21 12:13:08 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 21 12:13:10 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 21 12:13:10 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 21 17:00:12 zombie systemd[1]: Stopping CoolerControl Daemon...
+Nov 21 17:00:13 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mMain process shutting down[0m
+Nov 21 17:00:13 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mCPU Repository shutdown[0m
+Nov 21 17:00:13 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mGPU Repository shutdown[0m
+Nov 21 17:00:13 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mHWMON Repository shutdown[0m
+Nov 21 17:00:13 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mCUSTOM_SENSORS Repository shutdown[0m
+Nov 21 17:00:13 zombie coolercontrold[573]: [0;1;39m[0;1;31m[0;1;39mShutdown Complete[0m
+Nov 21 17:00:13 zombie systemd[1]: coolercontrold.service: Deactivated successfully.
+Nov 21 17:00:13 zombie systemd[1]: Stopped CoolerControl Daemon.
+Nov 21 17:00:13 zombie systemd[1]: [0;1;39m[0;1;31m[0;1;39mcoolercontrold.service: Consumed 15min 24.079s CPU time, 84.6M memory peak, 18.4M memory swap peak.[0m
+[0;1;39m-- Boot df9d08e436d0487fbbefe4ae87745c6b --[0m
+Nov 21 17:00:35 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 21 17:00:35 zombie coolercontrold[595]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                            [0;1;39mCoolerControlD:     3.0.2[0m
+                                            [0;1;39mName:               Arch Linux[0m
+                                            [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                            [0;1;39mHost:               zombie[0m
+                                            [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                            [0;1;39mArch:               x86_64[0m
+                                            [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                            [0;1;39mBoard Name:         G512LI[0m
+                                            [0;1;39mBoard Version:      1.0[0m
+                                            [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                            [0;1;39mBIOS Version:       5.17[0m
+Nov 21 17:00:35 zombie coolercontrold[595]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 21 17:00:37 zombie coolercontrold[595]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 21 17:00:37 zombie coolercontrold[595]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 21 17:00:37 zombie coolercontrold[595]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 21 17:00:37 zombie coolercontrold[595]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 21 17:00:37 zombie coolercontrold[595]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 21 17:00:37 zombie coolercontrold[595]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"driver name":["nvml:13.580.105.08"],"driver version":["580.105.08"],"locations":["00000000:01:00.0"]}}[0m
+Nov 21 17:00:37 zombie coolercontrold[595]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 21 17:00:37 zombie coolercontrold[595]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"driver version":["6.17.8-arch1-1"],"driver name":[""],"locations":["/sys/class/hwmon/hwmon8","/sys/devices/platform/coretemp.0","platform:coretemp"]}}[0m
+Nov 21 17:00:37 zombie coolercontrold[595]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 21 17:00:37 zombie coolercontrold[595]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"pch_cometlake":{"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"iwlwifi_1":{"locations":["/sys/class/hwmon/hwmon7","/sys/devices/virtual/thermal/thermal_zone5"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"asus":{"driver name":["asus-nb-wmi"],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"]},"nvme":{"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"acpitz":{"driver name":[""],"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"],"driver version":["6.17.8-arch1-1"]}}[0m
+Nov 21 17:00:37 zombie coolercontrold[595]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 21 17:00:37 zombie coolercontrold[595]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 21 17:00:37 zombie coolercontrold[595]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 21 17:00:37 zombie coolercontrold[595]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 21 17:00:37 zombie coolercontrold[595]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 21 18:26:23 zombie systemd[1]: Stopping CoolerControl Daemon...
+Nov 21 18:26:24 zombie coolercontrold[595]: [0;1;39m[0;1;31m[0;1;39mMain process shutting down[0m
+Nov 21 18:26:24 zombie coolercontrold[595]: [0;1;39m[0;1;31m[0;1;39mCPU Repository shutdown[0m
+Nov 21 18:26:24 zombie coolercontrold[595]: [0;1;39m[0;1;31m[0;1;39mGPU Repository shutdown[0m
+Nov 21 18:26:24 zombie coolercontrold[595]: [0;1;39m[0;1;31m[0;1;39mHWMON Repository shutdown[0m
+Nov 21 18:26:24 zombie coolercontrold[595]: [0;1;39m[0;1;31m[0;1;39mCUSTOM_SENSORS Repository shutdown[0m
+Nov 21 18:26:24 zombie coolercontrold[595]: [0;1;39m[0;1;31m[0;1;39mShutdown Complete[0m
+Nov 21 18:26:24 zombie systemd[1]: coolercontrold.service: Deactivated successfully.
+Nov 21 18:26:24 zombie systemd[1]: Stopped CoolerControl Daemon.
+Nov 21 18:26:24 zombie systemd[1]: coolercontrold.service: Consumed 1min 47.372s CPU time, 92.6M memory peak, 18.2M memory swap peak.
+[0;1;39m-- Boot 713439de0610446db3aad8bcddc2f9aa --[0m
+Nov 21 18:26:47 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 21 18:26:47 zombie coolercontrold[622]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                            [0;1;39mCoolerControlD:     3.0.2[0m
+                                            [0;1;39mName:               Arch Linux[0m
+                                            [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                            [0;1;39mHost:               zombie[0m
+                                            [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                            [0;1;39mArch:               x86_64[0m
+                                            [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                            [0;1;39mBoard Name:         G512LI[0m
+                                            [0;1;39mBoard Version:      1.0[0m
+                                            [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                            [0;1;39mBIOS Version:       5.17[0m
+Nov 21 18:26:47 zombie coolercontrold[622]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 21 18:26:49 zombie coolercontrold[622]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 21 18:26:49 zombie coolercontrold[622]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 21 18:26:49 zombie coolercontrold[622]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 21 18:26:49 zombie coolercontrold[622]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 21 18:26:49 zombie coolercontrold[622]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 21 18:26:49 zombie coolercontrold[622]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"driver name":["nvml:13.580.105.08"],"driver version":["580.105.08"],"locations":["00000000:01:00.0"]}}[0m
+Nov 21 18:26:49 zombie coolercontrold[622]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 21 18:26:49 zombie coolercontrold[622]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"locations":["/sys/class/hwmon/hwmon8","/sys/devices/platform/coretemp.0","platform:coretemp"],"driver version":["6.17.8-arch1-1"],"driver name":[""]}}[0m
+Nov 21 18:26:49 zombie coolercontrold[622]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 21 18:26:49 zombie coolercontrold[622]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"asus":{"driver name":["asus-nb-wmi"],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"]},"pch_cometlake":{"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"iwlwifi_1":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon7","/sys/devices/virtual/thermal/thermal_zone5"]},"nvme":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"]},"acpitz":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"]}}[0m
+Nov 21 18:26:49 zombie coolercontrold[622]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 21 18:26:49 zombie coolercontrold[622]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 21 18:26:49 zombie coolercontrold[622]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 21 18:26:49 zombie coolercontrold[622]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 21 18:26:49 zombie coolercontrold[622]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 21 18:41:16 zombie systemd[1]: Stopping CoolerControl Daemon...
+Nov 21 18:41:17 zombie coolercontrold[622]: [0;1;39m[0;1;31m[0;1;39mMain process shutting down[0m
+Nov 21 18:41:17 zombie coolercontrold[622]: [0;1;39m[0;1;31m[0;1;39mCPU Repository shutdown[0m
+Nov 21 18:41:17 zombie coolercontrold[622]: [0;1;39m[0;1;31m[0;1;39mGPU Repository shutdown[0m
+Nov 21 18:41:17 zombie coolercontrold[622]: [0;1;39m[0;1;31m[0;1;39mHWMON Repository shutdown[0m
+Nov 21 18:41:17 zombie coolercontrold[622]: [0;1;39m[0;1;31m[0;1;39mCUSTOM_SENSORS Repository shutdown[0m
+Nov 21 18:41:17 zombie coolercontrold[622]: [0;1;39m[0;1;31m[0;1;39mShutdown Complete[0m
+Nov 21 18:41:17 zombie systemd[1]: coolercontrold.service: Deactivated successfully.
+Nov 21 18:41:17 zombie systemd[1]: Stopped CoolerControl Daemon.
+Nov 21 18:41:17 zombie systemd[1]: coolercontrold.service: Consumed 14.565s CPU time, 67.4M memory peak, 15.8M memory swap peak.
+[0;1;39m-- Boot 84a4d125a06542f49049fa7efd1c3de2 --[0m
+Nov 21 18:41:40 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 21 18:41:40 zombie coolercontrold[578]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                            [0;1;39mCoolerControlD:     3.0.2[0m
+                                            [0;1;39mName:               Arch Linux[0m
+                                            [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                            [0;1;39mHost:               zombie[0m
+                                            [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                            [0;1;39mArch:               x86_64[0m
+                                            [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                            [0;1;39mBoard Name:         G512LI[0m
+                                            [0;1;39mBoard Version:      1.0[0m
+                                            [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                            [0;1;39mBIOS Version:       5.17[0m
+Nov 21 18:41:40 zombie coolercontrold[578]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 21 18:41:42 zombie coolercontrold[578]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 21 18:41:42 zombie coolercontrold[578]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 21 18:41:42 zombie coolercontrold[578]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 21 18:41:42 zombie coolercontrold[578]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 21 18:41:42 zombie coolercontrold[578]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 21 18:41:42 zombie coolercontrold[578]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"driver version":["580.105.08"],"driver name":["nvml:13.580.105.08"],"locations":["00000000:01:00.0"]}}[0m
+Nov 21 18:41:42 zombie coolercontrold[578]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 21 18:41:42 zombie coolercontrold[578]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 21 18:41:42 zombie coolercontrold[578]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"locations":["/sys/class/hwmon/hwmon8","/sys/devices/platform/coretemp.0","platform:coretemp"],"driver version":["6.17.8-arch1-1"],"driver name":[""]}}[0m
+Nov 21 18:41:42 zombie coolercontrold[578]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"pch_cometlake":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"],"driver name":[""]},"asus":{"driver name":["asus-nb-wmi"],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"]},"acpitz":{"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"iwlwifi_1":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon7","/sys/devices/virtual/thermal/thermal_zone5"]},"nvme":{"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"],"driver name":[""],"driver version":["6.17.8-arch1-1"]}}[0m
+Nov 21 18:41:42 zombie coolercontrold[578]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 21 18:41:42 zombie coolercontrold[578]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 21 18:41:42 zombie coolercontrold[578]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 21 18:41:42 zombie coolercontrold[578]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 21 18:41:42 zombie coolercontrold[578]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 21 18:42:09 zombie systemd[1]: Stopping CoolerControl Daemon...
+Nov 21 18:42:10 zombie coolercontrold[578]: [0;1;39m[0;1;31m[0;1;39mMain process shutting down[0m
+Nov 21 18:42:10 zombie coolercontrold[578]: [0;1;39m[0;1;31m[0;1;39mCPU Repository shutdown[0m
+Nov 21 18:42:10 zombie coolercontrold[578]: [0;1;39m[0;1;31m[0;1;39mGPU Repository shutdown[0m
+Nov 21 18:42:10 zombie coolercontrold[578]: [0;1;39m[0;1;31m[0;1;39mHWMON Repository shutdown[0m
+Nov 21 18:42:10 zombie coolercontrold[578]: [0;1;39m[0;1;31m[0;1;39mCUSTOM_SENSORS Repository shutdown[0m
+Nov 21 18:42:10 zombie coolercontrold[578]: [0;1;39m[0;1;31m[0;1;39mShutdown Complete[0m
+Nov 21 18:42:10 zombie systemd[1]: coolercontrold.service: Deactivated successfully.
+Nov 21 18:42:10 zombie systemd[1]: Stopped CoolerControl Daemon.
+Nov 21 18:42:10 zombie systemd[1]: coolercontrold.service: Consumed 657ms CPU time, 70.5M memory peak.
+[0;1;39m-- Boot 1b45abf1f80942eeb01712ca7a80a442 --[0m
+Nov 21 18:42:36 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 21 18:42:36 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                            [0;1;39mCoolerControlD:     3.0.2[0m
+                                            [0;1;39mName:               Arch Linux[0m
+                                            [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                            [0;1;39mHost:               zombie[0m
+                                            [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                            [0;1;39mArch:               x86_64[0m
+                                            [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                            [0;1;39mBoard Name:         G512LI[0m
+                                            [0;1;39mBoard Version:      1.0[0m
+                                            [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                            [0;1;39mBIOS Version:       5.17[0m
+Nov 21 18:42:36 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 21 18:42:38 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 21 18:42:38 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 21 18:42:38 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 21 18:42:38 zombie coolercontrold[613]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 21 18:42:38 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 21 18:42:38 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"driver version":["580.105.08"],"locations":["00000000:01:00.0"],"driver name":["nvml:13.580.105.08"]}}[0m
+Nov 21 18:42:38 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 21 18:42:38 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"locations":["/sys/class/hwmon/hwmon8","/sys/devices/platform/coretemp.0","platform:coretemp"],"driver name":[""],"driver version":["6.17.8-arch1-1"]}}[0m
+Nov 21 18:42:38 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 21 18:42:38 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"pch_cometlake":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"],"driver name":[""]},"iwlwifi_1":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon7","/sys/devices/virtual/thermal/thermal_zone5"],"driver name":[""]},"nvme":{"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"acpitz":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"]},"asus":{"driver name":["asus-nb-wmi"],"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"],"driver version":["6.17.8-arch1-1"]}}[0m
+Nov 21 18:42:38 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 21 18:42:38 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 21 18:42:38 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 21 18:42:38 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 21 18:42:38 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 21 22:51:41 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 21 22:54:11 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 21 22:54:11 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 21 22:54:13 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 21 22:54:13 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 22 05:17:18 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 22 13:53:15 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 22 13:53:15 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 22 13:53:17 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 22 13:53:17 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 22 19:35:42 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 22 20:13:51 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 22 20:13:51 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 22 20:13:53 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 22 20:13:53 zombie coolercontrold[613]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 22 22:32:16 zombie coolercontrold[613]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mSlow HWMon Device detected for: asus. This device may be slow to update and respond.[0m
+[0;1;39m-- Boot 6f12636803414604b413fa4354a3bf3d --[0m
+Nov 22 22:35:44 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 22 22:35:44 zombie coolercontrold[615]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                            [0;1;39mCoolerControlD:     3.0.2[0m
+                                            [0;1;39mName:               Arch Linux[0m
+                                            [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                            [0;1;39mHost:               zombie[0m
+                                            [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                            [0;1;39mArch:               x86_64[0m
+                                            [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                            [0;1;39mBoard Name:         G512LI[0m
+                                            [0;1;39mBoard Version:      1.0[0m
+                                            [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                            [0;1;39mBIOS Version:       5.17[0m
+Nov 22 22:35:44 zombie coolercontrold[615]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 22 22:35:46 zombie coolercontrold[615]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 22 22:35:46 zombie coolercontrold[615]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 22 22:35:46 zombie coolercontrold[615]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 22 22:35:46 zombie coolercontrold[615]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 22 22:35:46 zombie coolercontrold[615]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 22 22:35:46 zombie coolercontrold[615]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"driver name":["nvml:13.580.105.08"],"locations":["00000000:01:00.0"],"driver version":["580.105.08"]}}[0m
+Nov 22 22:35:46 zombie coolercontrold[615]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 22 22:35:46 zombie coolercontrold[615]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 22 22:35:46 zombie coolercontrold[615]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon7","/sys/devices/platform/coretemp.0","platform:coretemp"]}}[0m
+Nov 22 22:35:46 zombie coolercontrold[615]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"acpitz":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"]},"asus":{"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"],"driver name":["asus-nb-wmi"],"driver version":["6.17.8-arch1-1"]},"nvme":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"]},"pch_cometlake":{"driver version":["6.17.8-arch1-1"],"driver name":[""],"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"]},"iwlwifi_1":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon8","/sys/devices/virtual/thermal/thermal_zone5"]}}[0m
+Nov 22 22:35:46 zombie coolercontrold[615]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 22 22:35:46 zombie coolercontrold[615]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 22 22:35:46 zombie coolercontrold[615]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 22 22:35:46 zombie coolercontrold[615]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 22 22:35:46 zombie coolercontrold[615]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 22 22:53:57 zombie systemd[1]: Stopping CoolerControl Daemon...
+Nov 22 22:53:58 zombie coolercontrold[615]: [0;1;39m[0;1;31m[0;1;39mMain process shutting down[0m
+Nov 22 22:53:58 zombie coolercontrold[615]: [0;1;39m[0;1;31m[0;1;39mCPU Repository shutdown[0m
+Nov 22 22:53:58 zombie coolercontrold[615]: [0;1;39m[0;1;31m[0;1;39mGPU Repository shutdown[0m
+Nov 22 22:53:58 zombie coolercontrold[615]: [0;1;39m[0;1;31m[0;1;39mHWMON Repository shutdown[0m
+Nov 22 22:53:58 zombie coolercontrold[615]: [0;1;39m[0;1;31m[0;1;39mCUSTOM_SENSORS Repository shutdown[0m
+Nov 22 22:53:58 zombie coolercontrold[615]: [0;1;39m[0;1;31m[0;1;39mShutdown Complete[0m
+Nov 22 22:53:58 zombie systemd[1]: coolercontrold.service: Deactivated successfully.
+Nov 22 22:53:58 zombie systemd[1]: Stopped CoolerControl Daemon.
+Nov 22 22:53:58 zombie systemd[1]: coolercontrold.service: Consumed 23.860s CPU time, 92.6M memory peak.
+[0;1;39m-- Boot 17ab1bdcdb9a45f2a7597ae204559ca6 --[0m
+Nov 22 22:54:21 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 22 22:54:21 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                            [0;1;39mCoolerControlD:     3.0.2[0m
+                                            [0;1;39mName:               Arch Linux[0m
+                                            [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                            [0;1;39mHost:               zombie[0m
+                                            [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                            [0;1;39mArch:               x86_64[0m
+                                            [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                            [0;1;39mBoard Name:         G512LI[0m
+                                            [0;1;39mBoard Version:      1.0[0m
+                                            [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                            [0;1;39mBIOS Version:       5.17[0m
+Nov 22 22:54:21 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 22 22:54:23 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 22 22:54:23 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 22 22:54:23 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 22 22:54:23 zombie coolercontrold[599]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 22 22:54:23 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 22 22:54:23 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"locations":["00000000:01:00.0"],"driver name":["nvml:13.580.105.08"],"driver version":["580.105.08"]}}[0m
+Nov 22 22:54:23 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 22 22:54:23 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon8","/sys/devices/platform/coretemp.0","platform:coretemp"],"driver name":[""]}}[0m
+Nov 22 22:54:23 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 22 22:54:23 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"nvme":{"driver version":["6.17.8-arch1-1"],"driver name":[""],"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"]},"iwlwifi_1":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon7","/sys/devices/virtual/thermal/thermal_zone5"]},"acpitz":{"driver name":[""],"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"],"driver version":["6.17.8-arch1-1"]},"asus":{"driver name":["asus-nb-wmi"],"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"],"driver version":["6.17.8-arch1-1"]},"pch_cometlake":{"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"],"driver version":["6.17.8-arch1-1"],"driver name":[""]}}[0m
+Nov 22 22:54:24 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 22 22:54:24 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 22 22:54:24 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 22 22:54:24 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 22 22:54:24 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 23 03:54:18 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 23 12:31:27 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 23 12:31:27 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 23 12:31:29 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 23 12:31:29 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 23 12:46:29 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 23 12:54:17 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 23 12:54:18 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 23 12:54:19 zombie systemd[1]: Stopping CoolerControl Daemon...
+Nov 23 12:54:20 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 23 12:54:20 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 23 12:54:20 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mMain process shutting down[0m
+Nov 23 12:54:20 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mCPU Repository shutdown[0m
+Nov 23 12:54:20 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mGPU Repository shutdown[0m
+Nov 23 12:54:20 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mHWMON Repository shutdown[0m
+Nov 23 12:54:20 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mCUSTOM_SENSORS Repository shutdown[0m
+Nov 23 12:54:20 zombie coolercontrold[599]: [0;1;39m[0;1;31m[0;1;39mShutdown Complete[0m
+Nov 23 12:54:20 zombie systemd[1]: coolercontrold.service: Deactivated successfully.
+Nov 23 12:54:20 zombie systemd[1]: Stopped CoolerControl Daemon.
+Nov 23 12:54:20 zombie systemd[1]: coolercontrold.service: Consumed 6min 20.789s CPU time, 92.7M memory peak, 16.5M memory swap peak.
+[0;1;39m-- Boot ba72ea916cb44dcf9fb42e2a65e7e553 --[0m
+Nov 23 12:55:20 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 23 12:55:20 zombie coolercontrold[525]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                            [0;1;39mCoolerControlD:     3.0.2[0m
+                                            [0;1;39mName:               Arch Linux[0m
+                                            [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                            [0;1;39mHost:               zombie[0m
+                                            [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                            [0;1;39mArch:               x86_64[0m
+                                            [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                            [0;1;39mBoard Name:         G512LI[0m
+                                            [0;1;39mBoard Version:      1.0[0m
+                                            [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                            [0;1;39mBIOS Version:       5.17[0m
+Nov 23 12:55:20 zombie coolercontrold[525]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 23 12:55:22 zombie coolercontrold[525]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 23 12:55:23 zombie coolercontrold[525]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 23 12:55:23 zombie coolercontrold[525]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 23 12:55:23 zombie coolercontrold[525]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 23 12:55:23 zombie coolercontrold[525]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 23 12:55:23 zombie coolercontrold[525]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"locations":["00000000:01:00.0"],"driver name":["nvml:13.580.105.08"],"driver version":["580.105.08"]}}[0m
+Nov 23 12:55:23 zombie coolercontrold[525]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 23 12:55:23 zombie coolercontrold[525]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"driver name":[""],"locations":["/sys/class/hwmon/hwmon8","/sys/devices/platform/coretemp.0","platform:coretemp"],"driver version":["6.17.8-arch1-1"]}}[0m
+Nov 23 12:55:23 zombie coolercontrold[525]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 23 12:55:23 zombie coolercontrold[525]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"asus":{"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"],"driver name":["asus-nb-wmi"],"driver version":["6.17.8-arch1-1"]},"pch_cometlake":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"]},"iwlwifi_1":{"locations":["/sys/class/hwmon/hwmon7","/sys/devices/virtual/thermal/thermal_zone4"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"acpitz":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"]},"nvme":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"]}}[0m
+Nov 23 12:55:23 zombie coolercontrold[525]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 23 12:55:23 zombie coolercontrold[525]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 23 12:55:23 zombie coolercontrold[525]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 23 12:55:23 zombie coolercontrold[525]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 23 12:55:23 zombie coolercontrold[525]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 23 13:02:23 zombie systemd[1]: Stopping CoolerControl Daemon...
+Nov 23 13:02:23 zombie coolercontrold[525]: [0;1;39m[0;1;31m[0;1;39mMain process shutting down[0m
+Nov 23 13:02:23 zombie coolercontrold[525]: [0;1;39m[0;1;31m[0;1;39mCPU Repository shutdown[0m
+Nov 23 13:02:23 zombie coolercontrold[525]: [0;1;39m[0;1;31m[0;1;39mGPU Repository shutdown[0m
+Nov 23 13:02:23 zombie coolercontrold[525]: [0;1;39m[0;1;31m[0;1;39mHWMON Repository shutdown[0m
+Nov 23 13:02:23 zombie coolercontrold[525]: [0;1;39m[0;1;31m[0;1;39mCUSTOM_SENSORS Repository shutdown[0m
+Nov 23 13:02:23 zombie coolercontrold[525]: [0;1;39m[0;1;31m[0;1;39mShutdown Complete[0m
+Nov 23 13:02:24 zombie systemd[1]: coolercontrold.service: Deactivated successfully.
+Nov 23 13:02:24 zombie systemd[1]: Stopped CoolerControl Daemon.
+Nov 23 13:02:24 zombie systemd[1]: coolercontrold.service: Consumed 7.378s CPU time, 84.7M memory peak.
+[0;1;39m-- Boot 05e172bc748245358f9ad592ec52a6d5 --[0m
+Nov 23 13:02:48 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 23 13:02:48 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                            [0;1;39mCoolerControlD:     3.0.2[0m
+                                            [0;1;39mName:               Arch Linux[0m
+                                            [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                            [0;1;39mHost:               zombie[0m
+                                            [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                            [0;1;39mArch:               x86_64[0m
+                                            [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                            [0;1;39mBoard Name:         G512LI[0m
+                                            [0;1;39mBoard Version:      1.0[0m
+                                            [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                            [0;1;39mBIOS Version:       5.17[0m
+Nov 23 13:02:48 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 23 13:02:50 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 23 13:02:50 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 23 13:02:50 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 23 13:02:50 zombie coolercontrold[579]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 23 13:02:50 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 23 13:02:50 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"locations":["00000000:01:00.0"],"driver name":["nvml:13.580.105.08"],"driver version":["580.105.08"]}}[0m
+Nov 23 13:02:50 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon7","/sys/devices/platform/coretemp.0","platform:coretemp"],"driver name":[""]}}[0m
+Nov 23 13:02:50 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 23 13:02:50 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 23 13:02:50 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"iwlwifi_1":{"locations":["/sys/class/hwmon/hwmon8","/sys/devices/virtual/thermal/thermal_zone6"],"driver version":["6.17.8-arch1-1"],"driver name":[""]},"pch_cometlake":{"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"],"driver version":["6.17.8-arch1-1"],"driver name":[""]},"asus":{"driver name":["asus-nb-wmi"],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"]},"acpitz":{"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"nvme":{"driver name":[""],"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"],"driver version":["6.17.8-arch1-1"]}}[0m
+Nov 23 13:02:50 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 23 13:02:50 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 23 13:02:50 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 23 13:02:50 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 23 13:02:50 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 23 13:03:46 zombie systemd[1]: Stopping CoolerControl Daemon...
+Nov 23 13:03:47 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mMain process shutting down[0m
+Nov 23 13:03:47 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mCPU Repository shutdown[0m
+Nov 23 13:03:47 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mGPU Repository shutdown[0m
+Nov 23 13:03:47 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mHWMON Repository shutdown[0m
+Nov 23 13:03:47 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mCUSTOM_SENSORS Repository shutdown[0m
+Nov 23 13:03:47 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mShutdown Complete[0m
+Nov 23 13:03:47 zombie systemd[1]: coolercontrold.service: Deactivated successfully.
+Nov 23 13:03:47 zombie systemd[1]: Stopped CoolerControl Daemon.
+Nov 23 13:03:47 zombie systemd[1]: coolercontrold.service: Consumed 1.010s CPU time, 78.5M memory peak.
+[0;1;39m-- Boot e8ed203a88b9473cb92a6b87a761434b --[0m
+Nov 23 13:04:11 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 23 13:04:11 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                            [0;1;39mCoolerControlD:     3.0.2[0m
+                                            [0;1;39mName:               Arch Linux[0m
+                                            [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                            [0;1;39mHost:               zombie[0m
+                                            [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                            [0;1;39mArch:               x86_64[0m
+                                            [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                            [0;1;39mBoard Name:         G512LI[0m
+                                            [0;1;39mBoard Version:      1.0[0m
+                                            [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                            [0;1;39mBIOS Version:       5.17[0m
+Nov 23 13:04:11 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 23 13:04:13 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 23 13:04:13 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 23 13:04:13 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 23 13:04:13 zombie coolercontrold[579]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 23 13:04:13 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 23 13:04:13 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"driver name":["nvml:13.580.105.08"],"driver version":["580.105.08"],"locations":["00000000:01:00.0"]}}[0m
+Nov 23 13:04:13 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 23 13:04:13 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"locations":["/sys/class/hwmon/hwmon8","/sys/devices/platform/coretemp.0","platform:coretemp"],"driver name":[""],"driver version":["6.17.8-arch1-1"]}}[0m
+Nov 23 13:04:13 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 23 13:04:13 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"nvme":{"driver name":[""],"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"],"driver version":["6.17.8-arch1-1"]},"iwlwifi_1":{"locations":["/sys/class/hwmon/hwmon7","/sys/devices/virtual/thermal/thermal_zone5"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"asus":{"driver name":["asus-nb-wmi"],"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"],"driver version":["6.17.8-arch1-1"]},"pch_cometlake":{"driver name":[""],"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"],"driver version":["6.17.8-arch1-1"]},"acpitz":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"]}}[0m
+Nov 23 13:04:13 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 23 13:04:13 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 23 13:04:13 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 23 13:04:13 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 23 13:04:13 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 23 15:07:17 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 23 19:13:16 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 23 19:13:16 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 23 19:13:18 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 23 19:13:18 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 23 19:40:48 zombie systemd[1]: Stopping CoolerControl Daemon...
+Nov 23 19:40:48 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mMain process shutting down[0m
+Nov 23 19:40:48 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mCPU Repository shutdown[0m
+Nov 23 19:40:48 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mGPU Repository shutdown[0m
+Nov 23 19:40:48 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mHWMON Repository shutdown[0m
+Nov 23 19:40:48 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mCUSTOM_SENSORS Repository shutdown[0m
+Nov 23 19:40:48 zombie coolercontrold[579]: [0;1;39m[0;1;31m[0;1;39mShutdown Complete[0m
+Nov 23 19:40:49 zombie systemd[1]: coolercontrold.service: Deactivated successfully.
+Nov 23 19:40:49 zombie systemd[1]: Stopped CoolerControl Daemon.
+Nov 23 19:40:49 zombie systemd[1]: coolercontrold.service: Consumed 3min 14.131s CPU time, 92.6M memory peak, 16.3M memory swap peak.
+[0;1;39m-- Boot c57df3dae8c247bdb0ea198cf082a58b --[0m
+Nov 23 19:41:28 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 23 19:41:28 zombie coolercontrold[587]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                            [0;1;39mCoolerControlD:     3.0.2[0m
+                                            [0;1;39mName:               Arch Linux[0m
+                                            [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                            [0;1;39mHost:               zombie[0m
+                                            [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                            [0;1;39mArch:               x86_64[0m
+                                            [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                            [0;1;39mBoard Name:         G512LI[0m
+                                            [0;1;39mBoard Version:      1.0[0m
+                                            [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                            [0;1;39mBIOS Version:       5.17[0m
+Nov 23 19:41:28 zombie coolercontrold[587]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 23 19:41:30 zombie coolercontrold[587]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 23 19:41:30 zombie coolercontrold[587]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 23 19:41:30 zombie coolercontrold[587]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 23 19:41:30 zombie coolercontrold[587]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 23 19:41:30 zombie coolercontrold[587]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 23 19:41:30 zombie coolercontrold[587]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"driver version":["580.105.08"],"locations":["00000000:01:00.0"],"driver name":["nvml:13.580.105.08"]}}[0m
+Nov 23 19:41:30 zombie coolercontrold[587]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 23 19:41:30 zombie coolercontrold[587]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon8","/sys/devices/platform/coretemp.0","platform:coretemp"],"driver name":[""]}}[0m
+Nov 23 19:41:30 zombie coolercontrold[587]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 23 19:41:30 zombie coolercontrold[587]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"asus":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"],"driver name":["asus-nb-wmi"]},"pch_cometlake":{"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"acpitz":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"]},"iwlwifi_1":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon7","/sys/devices/virtual/thermal/thermal_zone5"],"driver name":[""]},"nvme":{"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"],"driver name":[""],"driver version":["6.17.8-arch1-1"]}}[0m
+Nov 23 19:41:30 zombie coolercontrold[587]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 23 19:41:31 zombie coolercontrold[587]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 23 19:41:31 zombie coolercontrold[587]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 23 19:41:31 zombie coolercontrold[587]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 23 19:41:31 zombie coolercontrold[587]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 23 19:48:44 zombie systemd[1]: Stopping CoolerControl Daemon...
+Nov 23 19:48:45 zombie coolercontrold[587]: [0;1;39m[0;1;31m[0;1;39mMain process shutting down[0m
+Nov 23 19:48:45 zombie coolercontrold[587]: [0;1;39m[0;1;31m[0;1;39mCPU Repository shutdown[0m
+Nov 23 19:48:45 zombie coolercontrold[587]: [0;1;39m[0;1;31m[0;1;39mGPU Repository shutdown[0m
+Nov 23 19:48:45 zombie coolercontrold[587]: [0;1;39m[0;1;31m[0;1;39mHWMON Repository shutdown[0m
+Nov 23 19:48:45 zombie coolercontrold[587]: [0;1;39m[0;1;31m[0;1;39mCUSTOM_SENSORS Repository shutdown[0m
+Nov 23 19:48:45 zombie coolercontrold[587]: [0;1;39m[0;1;31m[0;1;39mShutdown Complete[0m
+Nov 23 19:48:45 zombie systemd[1]: coolercontrold.service: Deactivated successfully.
+Nov 23 19:48:45 zombie systemd[1]: Stopped CoolerControl Daemon.
+Nov 23 19:48:45 zombie systemd[1]: coolercontrold.service: Consumed 9.892s CPU time, 92.3M memory peak.
+[0;1;39m-- Boot 49e06bb302824804ac6d249973f95803 --[0m
+Nov 23 19:49:06 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 23 19:49:06 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                            [0;1;39mCoolerControlD:     3.0.2[0m
+                                            [0;1;39mName:               Arch Linux[0m
+                                            [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                            [0;1;39mHost:               zombie[0m
+                                            [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                            [0;1;39mArch:               x86_64[0m
+                                            [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                            [0;1;39mBoard Name:         G512LI[0m
+                                            [0;1;39mBoard Version:      1.0[0m
+                                            [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                            [0;1;39mBIOS Version:       5.17[0m
+Nov 23 19:49:06 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 23 19:49:08 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 23 19:49:08 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 23 19:49:08 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 23 19:49:08 zombie coolercontrold[557]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 23 19:49:08 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 23 19:49:08 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"driver version":["580.105.08"],"locations":["00000000:01:00.0"],"driver name":["nvml:13.580.105.08"]}}[0m
+Nov 23 19:49:08 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 23 19:49:08 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 23 19:49:08 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon7","/sys/devices/platform/coretemp.0","platform:coretemp"]}}[0m
+Nov 23 19:49:08 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"pch_cometlake":{"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"acpitz":{"driver version":["6.17.8-arch1-1"],"driver name":[""],"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"]},"asus":{"driver name":["asus-nb-wmi"],"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"],"driver version":["6.17.8-arch1-1"]},"nvme":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"]},"iwlwifi_1":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon8","/sys/devices/virtual/thermal/thermal_zone5"]}}[0m
+Nov 23 19:49:08 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 23 19:49:08 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 23 19:49:08 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 23 19:49:08 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 23 19:49:08 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 23 20:16:29 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 23 20:23:26 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 23 20:23:26 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 23 20:23:28 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 23 20:23:28 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 23 21:20:21 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+Nov 23 21:22:12 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is waking from sleep[0m
+Nov 23 21:22:12 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mWaiting 2s before resuming after waking from sleep.[0m
+Nov 23 21:22:14 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mRe-initializing and re-applying settings after waking from sleep[0m
+Nov 23 21:22:14 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 24 01:21:22 zombie coolercontrold[557]: [0;1;39m[0;1;31m[0;1;39mReceived message that system is going to sleep.[0m
+[0;1;39m-- Boot 26e6350a562e4fb1b2cb08ce387ff3e2 --[0m
+Nov 24 01:21:08 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 24 01:21:08 zombie coolercontrold[600]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                            [0;1;39mCoolerControlD:     3.0.2[0m
+                                            [0;1;39mName:               Arch Linux[0m
+                                            [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                            [0;1;39mHost:               zombie[0m
+                                            [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                            [0;1;39mArch:               x86_64[0m
+                                            [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                            [0;1;39mBoard Name:         G512LI[0m
+                                            [0;1;39mBoard Version:      1.0[0m
+                                            [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                            [0;1;39mBIOS Version:       5.17[0m
+Nov 24 01:21:08 zombie coolercontrold[600]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 24 01:21:10 zombie coolercontrold[600]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 24 01:21:10 zombie coolercontrold[600]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 24 01:21:10 zombie coolercontrold[600]: [0;1;39m[0;1;31m[0;1;39mliquidctl system Python package not found.[0m
+Nov 24 01:21:10 zombie coolercontrold[600]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mPython Environment Error: Python liquidctl system package not detected. If you want liquidctl device support, please make sure the liquidctl package is installed with your distribution's package manager. If not, you may disable liquidctl support to no longer see this message. liqctld exited with a non-zero exit code: 1[0m
+Nov 24 01:21:10 zombie coolercontrold[600]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 24 01:21:10 zombie coolercontrold[600]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"driver name":["nvml:13.580.105.08"],"driver version":["580.105.08"],"locations":["00000000:01:00.0"]}}[0m
+Nov 24 01:21:10 zombie coolercontrold[600]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 24 01:21:10 zombie coolercontrold[600]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon7","/sys/devices/platform/coretemp.0","platform:coretemp"]}}[0m
+Nov 24 01:21:10 zombie coolercontrold[600]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 24 01:21:10 zombie coolercontrold[600]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"asus":{"driver name":["asus-nb-wmi"],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"]},"nvme":{"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"iwlwifi_1":{"driver name":[""],"locations":["/sys/class/hwmon/hwmon8","/sys/devices/virtual/thermal/thermal_zone5"],"driver version":["6.17.8-arch1-1"]},"pch_cometlake":{"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"],"driver version":["6.17.8-arch1-1"],"driver name":[""]},"acpitz":{"driver version":["6.17.8-arch1-1"],"driver name":[""],"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"]}}[0m
+Nov 24 01:21:10 zombie coolercontrold[600]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 24 01:21:10 zombie coolercontrold[600]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 24 01:21:10 zombie coolercontrold[600]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 24 01:21:10 zombie coolercontrold[600]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 24 01:21:10 zombie coolercontrold[600]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 24 18:00:45 zombie systemd[1]: Stopping CoolerControl Daemon...
+Nov 24 18:00:45 zombie coolercontrold[600]: [0;1;39m[0;1;31m[0;1;39mMain process shutting down[0m
+Nov 24 18:00:45 zombie coolercontrold[600]: [0;1;39m[0;1;31m[0;1;39mCPU Repository shutdown[0m
+Nov 24 18:00:45 zombie coolercontrold[600]: [0;1;39m[0;1;31m[0;1;39mGPU Repository shutdown[0m
+Nov 24 18:00:45 zombie coolercontrold[600]: [0;1;39m[0;1;31m[0;1;39mHWMON Repository shutdown[0m
+Nov 24 18:00:45 zombie coolercontrold[600]: [0;1;39m[0;1;31m[0;1;39mCUSTOM_SENSORS Repository shutdown[0m
+Nov 24 18:00:45 zombie coolercontrold[600]: [0;1;39m[0;1;31m[0;1;39mShutdown Complete[0m
+Nov 24 18:00:45 zombie systemd[1]: coolercontrold.service: Deactivated successfully.
+Nov 24 18:00:45 zombie systemd[1]: Stopped CoolerControl Daemon.
+Nov 24 18:00:45 zombie systemd[1]: coolercontrold.service: Consumed 39.708s CPU time, 92.4M memory peak.
+Nov 24 18:00:45 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 24 18:00:45 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                              [0;1;39mCoolerControlD:     3.0.2[0m
+                                              [0;1;39mName:               Arch Linux[0m
+                                              [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                              [0;1;39mHost:               zombie[0m
+                                              [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                              [0;1;39mArch:               x86_64[0m
+                                              [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                              [0;1;39mBoard Name:         G512LI[0m
+                                              [0;1;39mBoard Version:      1.0[0m
+                                              [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                              [0;1;39mBIOS Version:       5.17[0m
+                                              [0;1;39mXDG Desktops:       Hyprland[0m
+                                              [0;1;39mXDG Session Types:  wayland, unspecified[0m
+Nov 24 18:00:45 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 24 18:00:47 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 24 18:00:47 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 24 18:00:47 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mliquidctl version detected: 1.15.0[0m
+Nov 24 18:00:47 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mInitializing liquidctl service...[0m
+Nov 24 18:00:47 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mDevices found: [][0m
+Nov 24 18:00:48 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mExchanging handshake[0m
+Nov 24 18:00:48 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mDevices found: [][0m
+Nov 24 18:00:48 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mNo Liqctld supported and enabled devices found. Shutting coolercontrol-liqctld down.[0m
+Nov 24 18:00:48 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mQuit command received. Shutting down.[0m
+Nov 24 18:00:48 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mLiqctld service shutdown complete.[0m
+Nov 24 18:00:48 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mInitialized Liquidctl Devices: {}[0m
+Nov 24 18:00:48 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 24 18:00:48 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"driver name":["nvml:13.580.105.08"],"locations":["00000000:01:00.0"],"driver version":["580.105.08"]}}[0m
+Nov 24 18:00:48 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 24 18:00:48 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon7","/sys/devices/platform/coretemp.0","platform:coretemp"]}}[0m
+Nov 24 18:00:48 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 24 18:00:48 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"pch_cometlake":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"],"driver name":[""]},"asus":{"driver version":["6.17.8-arch1-1"],"driver name":["asus-nb-wmi"],"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"]},"iwlwifi_1":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon8","/sys/devices/virtual/thermal/thermal_zone5"],"driver name":[""]},"nvme":{"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"],"driver version":["6.17.8-arch1-1"],"driver name":[""]},"acpitz":{"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"],"driver version":["6.17.8-arch1-1"],"driver name":[""]}}[0m
+Nov 24 18:00:48 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 24 18:00:48 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 24 18:00:48 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 24 18:00:48 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 24 18:00:48 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 24 18:02:00 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mMain process shutting down[0m
+Nov 24 18:02:00 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mLIQUIDCTL Repository Shutdown[0m
+Nov 24 18:02:00 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mCPU Repository shutdown[0m
+Nov 24 18:02:00 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mGPU Repository shutdown[0m
+Nov 24 18:02:00 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mHWMON Repository shutdown[0m
+Nov 24 18:02:00 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mCUSTOM_SENSORS Repository shutdown[0m
+Nov 24 18:02:00 zombie coolercontrold[35270]: [0;1;39m[0;1;31m[0;1;39mShutdown Complete[0m
+Nov 24 18:02:00 zombie systemd[1]: coolercontrold.service: Deactivated successfully.
+Nov 24 18:02:00 zombie systemd[1]: coolercontrold.service: Consumed 2.290s CPU time, 61.7M memory peak.
+Nov 24 18:02:01 zombie systemd[1]: coolercontrold.service: Scheduled restart job, restart counter is at 1.
+Nov 24 18:02:01 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 24 18:02:01 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                              [0;1;39mCoolerControlD:     3.0.2[0m
+                                              [0;1;39mName:               Arch Linux[0m
+                                              [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                              [0;1;39mHost:               zombie[0m
+                                              [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                              [0;1;39mArch:               x86_64[0m
+                                              [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                              [0;1;39mBoard Name:         G512LI[0m
+                                              [0;1;39mBoard Version:      1.0[0m
+                                              [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                              [0;1;39mBIOS Version:       5.17[0m
+                                              [0;1;39mXDG Desktops:       Hyprland[0m
+                                              [0;1;39mXDG Session Types:  unspecified, wayland[0m
+Nov 24 18:02:01 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 24 18:02:03 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 24 18:02:03 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 24 18:02:03 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mliquidctl version detected: 1.15.0[0m
+Nov 24 18:02:03 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mInitializing liquidctl service...[0m
+Nov 24 18:02:03 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mDevices found: [][0m
+Nov 24 18:02:03 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mExchanging handshake[0m
+Nov 24 18:02:03 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mDevices found: [][0m
+Nov 24 18:02:03 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mNo Liqctld supported and enabled devices found. Shutting coolercontrol-liqctld down.[0m
+Nov 24 18:02:03 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mQuit command received. Shutting down.[0m
+Nov 24 18:02:04 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mLiqctld service shutdown complete.[0m
+Nov 24 18:02:04 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mInitialized Liquidctl Devices: {}[0m
+Nov 24 18:02:04 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 24 18:02:04 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"driver name":["nvml:13.580.105.08"],"driver version":["580.105.08"],"locations":["00000000:01:00.0"]}}[0m
+Nov 24 18:02:04 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 24 18:02:04 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon7","/sys/devices/platform/coretemp.0","platform:coretemp"],"driver name":[""]}}[0m
+Nov 24 18:02:04 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 24 18:02:04 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"pch_cometlake":{"driver version":["6.17.8-arch1-1"],"driver name":[""],"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"]},"acpitz":{"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"iwlwifi_1":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon8","/sys/devices/virtual/thermal/thermal_zone5"]},"asus":{"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"],"driver name":["asus-nb-wmi"]},"nvme":{"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"],"driver version":["6.17.8-arch1-1"],"driver name":[""]}}[0m
+Nov 24 18:02:04 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 24 18:02:04 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 24 18:02:04 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 24 18:02:04 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 24 18:02:04 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
+Nov 24 18:02:41 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mMain process shutting down[0m
+Nov 24 18:02:41 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mLIQUIDCTL Repository Shutdown[0m
+Nov 24 18:02:41 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mCPU Repository shutdown[0m
+Nov 24 18:02:41 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mGPU Repository shutdown[0m
+Nov 24 18:02:41 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mHWMON Repository shutdown[0m
+Nov 24 18:02:41 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mCUSTOM_SENSORS Repository shutdown[0m
+Nov 24 18:02:41 zombie coolercontrold[35451]: [0;1;39m[0;1;31m[0;1;39mShutdown Complete[0m
+Nov 24 18:02:41 zombie systemd[1]: coolercontrold.service: Deactivated successfully.
+Nov 24 18:02:41 zombie systemd[1]: coolercontrold.service: Consumed 1.528s CPU time, 58.1M memory peak.
+Nov 24 18:02:42 zombie systemd[1]: coolercontrold.service: Scheduled restart job, restart counter is at 2.
+Nov 24 18:02:42 zombie systemd[1]: Started CoolerControl Daemon.
+Nov 24 18:02:42 zombie coolercontrold[35466]: [0;1;39m[0;1;31m[0;1;39mSystem Info:[0m
+                                              [0;1;39mCoolerControlD:     3.0.2[0m
+                                              [0;1;39mName:               Arch Linux[0m
+                                              [0;1;39mOS:                 Linux (Arch Linux rolling)[0m
+                                              [0;1;39mHost:               zombie[0m
+                                              [0;1;39mKernel:             6.17.8-arch1-1[0m
+                                              [0;1;39mArch:               x86_64[0m
+                                              [0;1;39mBoard Manufacturer: ASUSTeK COMPUTER INC.[0m
+                                              [0;1;39mBoard Name:         G512LI[0m
+                                              [0;1;39mBoard Version:      1.0[0m
+                                              [0;1;39mBIOS Manufacturer:  American Megatrends Inc.[0m
+                                              [0;1;39mBIOS Version:       5.17[0m
+                                              [0;1;39mXDG Desktops:       Hyprland[0m
+                                              [0;1;39mXDG Session Types:  wayland, unspecified[0m
+Nov 24 18:02:42 zombie coolercontrold[35466]: [0;1;39m[0;1;31m[0;1;39mConfiguration file check successful[0m
+Nov 24 18:02:44 zombie coolercontrold[35466]: [0;1;39m[0;1;31m[0;1;39mInitializing Devices...[0m
+Nov 24 18:02:44 zombie coolercontrold[35466]: [0;1;39m[0;1;31m[0;1;39mPython Version detected: 3.13.7 (main, Aug 15 2025, 12:34:02) [GCC 15.2.1 20250813][0m
+Nov 24 18:02:44 zombie coolercontrold[35466]: [0;1;39m[0;1;31m[0;1;39mliquidctl version detected: 1.15.0[0m
+Nov 24 18:02:44 zombie coolercontrold[35466]: [0;1;39m[0;1;31m[0;1;39mInitializing liquidctl service...[0m
+Nov 24 18:02:44 zombie coolercontrold[35466]: [0;1;39m[0;1;31m[0;1;39mDevices found: [][0m
+Nov 24 18:02:44 zombie coolercontrold[35466]: [0;1;39m[0;1;31m[0;1;39mExchanging handshake[0m
+Nov 24 18:02:44 zombie coolercontrold[35466]: [0;1;39m[0;1;31m[0;1;39mDevices found: [][0m
+Nov 24 18:02:44 zombie coolercontrold[35466]: [0;1;39m[0;1;31m[0;1;39mNo Liqctld supported and enabled devices found. Shutting coolercontrol-liqctld down.[0m
+Nov 24 18:02:44 zombie coolercontrold[35466]: [0;1;39m[0;1;31m[0;1;39mQuit command received. Shutting down.[0m
+Nov 24 18:02:45 zombie coolercontrold[35466]: [0;1;39m[0;1;31m[0;1;39mLiqctld service shutdown complete.[0m
+Nov 24 18:02:45 zombie coolercontrold[35466]: [0;1;39m[0;1;31m[0;1;39mInitialized Liquidctl Devices: {}[0m
+Nov 24 18:02:45 zombie coolercontrold[35466]: [0;1;39m[0;1;31m[0;1;39mNVML found and initialized.[0m
+Nov 24 18:02:45 zombie coolercontrold[35466]: [0;1;39m[0;1;31m[0;1;39mInitialized GPU Devices: {"NVIDIA GeForce GTX 1650 Ti":{"locations":["00000000:01:00.0"],"driver name":["nvml:13.580.105.08"],"driver version":["580.105.08"]}}[0m
+Nov 24 18:02:45 zombie coolercontrold[35466]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan1_input[0m
+Nov 24 18:02:45 zombie coolercontrold[35466]: [0;1;39m[0;1;31m[0;1;39mInitialized CPU Devices: {"Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz":{"locations":["/sys/class/hwmon/hwmon7","/sys/devices/platform/coretemp.0","platform:coretemp"],"driver name":[""],"driver version":["6.17.8-arch1-1"]}}[0m
+Nov 24 18:02:45 zombie coolercontrold[35466]: [0;1;39m[0;1;31m[0;1;39mUncontrollable RPM-only fan found at /sys/class/hwmon/hwmon5/fan2_input[0m
+Nov 24 18:02:45 zombie coolercontrold[35466]: [0;1;39m[0;1;31m[0;1;39mInitialized Hwmon Devices: {"pch_cometlake":{"locations":["/sys/class/hwmon/hwmon4","/sys/devices/virtual/thermal/thermal_zone3"],"driver version":["6.17.8-arch1-1"],"driver name":[""]},"iwlwifi_1":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon8","/sys/devices/virtual/thermal/thermal_zone5"]},"asus":{"driver name":["asus-nb-wmi"],"locations":["/sys/class/hwmon/hwmon5","/sys/devices/platform/asus-nb-wmi","platform:asus-nb-wmi"],"driver version":["6.17.8-arch1-1"]},"acpitz":{"locations":["/sys/class/hwmon/hwmon1","/sys/devices/virtual/thermal/thermal_zone0"],"driver name":[""],"driver version":["6.17.8-arch1-1"]},"nvme":{"driver name":[""],"driver version":["6.17.8-arch1-1"],"locations":["/sys/class/hwmon/hwmon3","/sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0"]}}[0m
+Nov 24 18:02:45 zombie coolercontrold[35466]: [0;1;39m[0;1;31m[0;1;39mInitialized Custom Sensors: [][0m
+Nov 24 18:02:45 zombie coolercontrold[35466]: [0;1;39m[0;1;31m[0;1;39mApplying all saved device settings[0m
+Nov 24 18:02:45 zombie coolercontrold[35466]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: 127.0.0.1:11987[0m
+Nov 24 18:02:45 zombie coolercontrold[35466]: [0;1;39m[0;1;31m[0;1;39mAPI bound to address: [::1]:11987[0m
+Nov 24 18:02:45 zombie coolercontrold[35466]: [0;1;39m[0;1;31m[0;1;39mInitialization Complete[0m
